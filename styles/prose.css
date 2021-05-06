@@ -1,0 +1,57 @@
+.prose {
+  @apply text-gray-900;
+}
+
+.prose blockquote {
+  @apply font-normal border-l-2 border-gray-200;
+}
+
+.prose figure figcaption {
+  @apply text-center;
+}
+
+.prose img {
+  @apply w-full rounded;
+}
+
+.prose a {
+  color: #113485;
+}
+
+.prose table {
+  @apply text-gray-900;
+}
+
+.prose b,
+.prose strong {
+  @apply font-bold text-gray-900;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  @apply font-bold;
+}
+
+.prose pre {
+  @apply px-8 py-6 space-y-4 text-sm text-gray-800 bg-gray-400 border-gray-300 rounded bg-opacity-5;
+}
+
+.prose code {
+  @apply font-normal text-gray-800 px-1.5 py-1 border-gray-100 bg-gray-100 rounded mx-1.5;
+}
+
+.prose code,
+.prose pre {
+  @apply text-base;
+}
+
+.prose ul > li::before {
+  width: 0.325em;
+  height: 0.325em;
+  top: 0.675em;
+  background-color: #6b7280;
+}
