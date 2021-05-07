@@ -2,7 +2,7 @@
 title: 'Minecraftを用いた未来の教育を考える「Minecraftと教育」ワークショップを開催！'
 subtitle: 'Google Educator Group Kamakuraと合同で「Minecraftと教育」ワークショップを開催します。'
 coverImage: '/news/geg/cover.png'
-date: '2021-05-08T00:00:00'
+date: '2021-05-08T20:00:00'
 ogImage:
   url: '/news/geg/cover.png'
 ---
@@ -23,10 +23,10 @@ Googleが世界中に展開する教育コミュニティ、GEG KamakuraとImagi
 | 開催日時 | 5.28 (金) 19:00 - 21:00 (入室時間: 18:30 - 18:55) |
 | 会場 | Zoom (オンライン) |
 | プログラム内容 | Minecraftと教育について考えるワークショップ, Imagination Serverのワールド観光など |
-| 参加対象 | 中学生以上の教育関係者の方, Minecraftに関心のある方 |
+| 参加対象 | 13歳以上の教育関係者の方, Minecraftに関心のある方 |
 | 持ち物 | (ワールド観光に参加する場合) Minecraft統合版 |
 | 定員 | 50名 |
-| 参加方法 | [こちら](https://google.com/) のフォームに必要事項をご記入の上、送信してください。定員を上回る場合は抽選となります。 |
+| 参加方法 | [こちら](https://docs.google.com/forms/d/e/1FAIpQLSfwHEZaaO5RiO0c35jzJFhTOyP63-UjJxNfTu9Y8wjLqYZzIw/viewform) のフォームに必要事項をご記入の上、送信してください。定員を上回る場合は抽選となります。 |
 
 ## GEGとは
 
