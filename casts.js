@@ -46,19 +46,9 @@ export default
     "role": "クリエイティブ/コマンド"
   },
   {
-    "id": 9,
-    "name": "calm",
-    "role": "クリエイティブ/コマンド"
-  },
-  {
     "id": 10,
     "name": "SHOoooo22",
     "role": "クリエイティブ/コマンド"
-  },
-  {
-    "id": 11,
-    "name": "V.LEMO",
-    "role": "クリエイティブ/コマンド/アドオン"
   },
   {
     "id": 12,
@@ -72,7 +62,7 @@ export default
   },
   {
     "id": 14,
-    "name": "Topolino",
+    "name": "Topolino1802",
     "role": "クリエイティブ/コマンド"
   },
   {
@@ -129,5 +119,25 @@ export default
     "id": 25,
     "name": "0505Keitan",
     "role": "開発/クリエイティブ"
+  },
+  {
+    "id": 27,
+    "name": "しおん",
+    "role": "クリエイティブ"
+  },
+  {
+    "id": 28,
+    "name": "moyamoya1028",
+    "role": "クリエイティブ"
+  },
+  {
+    "id": 29,
+    "name": "tororobanny09",
+    "role": "クリエイティブ"
+  },
+  {
+    "id": 30,
+    "name": "まっさー",
+    "role": "アドバイザー"
   }
 ]
