@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Layout from '@/components/layout'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
 import Moment from 'react-moment'
@@ -16,26 +17,20 @@ export default function Home({ posts }) {
 
       <Header />
 
-      <main className='max-w-screen-lg mx-auto px-4'>
-        <section className='mt-6 pb-32'>
-          <div className='relative w-full'>
-            <figure className='lg:-mx-8'>
-              <div className='relative rounded-md header-image'>
-                {/* <div className='w-full h-full header-text text-white'>
-                  <h1>Imagination!</h1>
-                  <p className='hidden sm:block mt-2 text-sm'>私たちは、東京ディズニーリゾート®︎をMinecraftで再現しているクリエイティブチームです。</p>
-                </div> */}
-                <div className='news-banner absolute bottom-0 rounded-b-md bg-blue-800 hover:bg-blue-900 w-full px-6 py-4 flex items-center justify-center text-sm text-white'>
-                  <div className='line-animation' />
-                  <Link href='/news/geg'>
-                    <a className='w-full h-full flex justify-center'>
-                      <span className='line-clamp-multiple'>Minecraftを用いた未来の教育を考える「Minecraftと教育」ワークショップを開催！ →</span>
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </figure>
+      <section className='hero'>
+        <div className='hero-text'>
+          <div className='w-full h-full header-text text-white'>
+            <h1>Imagination!</h1>
+            <p className='mt-2 text-sm'>Minecraftで東京ディズニーリゾート®︎を再現プロジェクト</p>
           </div>
+        </div>
+        <div className='video-wrapper'>
+          <video src="/bg.mp4" className="video" autoPlay loop muted></video>
+        </div>
+      </section>
+
+      <Layout>
+        <section className='mt-6 pb-32'>
           <div className='relative mt-12 mb-30 md:flex md:space-x-12'>
             <div className='flex items-center justify-between md:flex-col md:items-baseline md:justify-start'>
               <h4 className='font-semibold'>新着ニュース</h4>
@@ -102,7 +97,7 @@ export default function Home({ posts }) {
             </Link>
           </div>
         </section>
-      </main>
+      </Layout>
 
       <Footer />
     </>
