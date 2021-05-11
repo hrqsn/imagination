@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
       const height = window.innerHeight
       for (let i = 0; i < elm.length; i++) {
         const rect = elm[i].getBoundingClientRect()
-        const pos = rect.top - height + height/5
+        const pos = rect.top - height + height/6
         if (pos < 0) {
           elm[i].classList.add('inshow')
         }

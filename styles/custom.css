@@ -29,6 +29,7 @@
   html, body, #__next {
     position: relative;
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
     @apply w-full bg-white text-gray-900;
   }
   
@@ -272,6 +273,16 @@
     transform: translate3d(0,10px,0);
   }
   .scroll-fx.fx-c.inshow {
+    animation-name: img-fade;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+  }
+
+  .scroll-fx.fx-fade {
+    opacity: 0;
+    transform: translate3d(0,10px,0);
+  }
+  .scroll-fx.fx-fade.inshow {
     animation-name: img-fade;
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
