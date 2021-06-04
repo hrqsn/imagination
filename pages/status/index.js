@@ -18,7 +18,7 @@ export default function Status ({ land, sea }) {
       <section className='w-full section-image'　 style={{'backgroundImage': 'url("/img/news.png")'}}>
         <div className='w-full h-full flex items-center justify-center'>
           <div>
-            <span className='text-xs sm:text-sm block font-medium text-gray-100 subtitle text-center'>Recreation Status</span>
+            <span className='text-xs sm:text-sm block font-medium text-gray-100 subtitle text-center'>Reproduction Status</span>
             <h1 className='mt-1 text-xl sm:text-2xl font-semibold text-white text-center'>再現状況</h1>
           </div>
         </div>
