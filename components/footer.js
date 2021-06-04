@@ -12,6 +12,9 @@ export default function Footer () {
             <Link href='/events/visit'>
               <a>観光企画</a>
             </Link>
+            <Link href='/status'>
+              <a>再現状況</a>
+            </Link>
             <Link href='/news'>
               <a>ニュース</a>
             </Link>
