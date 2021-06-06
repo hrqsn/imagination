@@ -15,6 +15,9 @@ export default function Footer () {
             <Link href='/status'>
               <a>再現状況</a>
             </Link>
+            <Link href='/reference'>
+              <a>再現資料提供</a>
+            </Link>
             <Link href='/news'>
               <a>ニュース</a>
             </Link>
