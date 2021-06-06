@@ -26,6 +26,9 @@ export default function Header () {
           <Link href='/status'>
             <a className={activeNavItem('/status')}>再現状況</a>
           </Link>
+          <Link href='/reference'>
+            <a className={activeNavItem('/reference')}>資料提供</a>
+          </Link>
           <Link href='/news'>
             <a className={activeNavItem('/news')}>ニュース</a>
           </Link>
