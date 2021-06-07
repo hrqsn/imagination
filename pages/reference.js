@@ -7,7 +7,7 @@ export default function Visit () {
   return (
     <>
       <Head>
-        <title>お問い合わせ | Imagination Server</title>
+        <title>再現資料提供 | Imagination Server</title>
       </Head>
 
       <Header />
