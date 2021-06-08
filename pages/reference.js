@@ -22,7 +22,7 @@ export default function Visit () {
       </section>
       
       <main className='max-w-screen-md mx-auto px-4'>
-        <section className='relative mt-32'>
+        <section className='relative pt-32'>
           <p>Imagination Serverでは、より正確な再現を行うため、実際のパークで撮影した資料（写真）を募集しています。</p>
           <p>ご協力いただいた際は、ご希望に応じて私たちのワールドにお名前を記載させていただきます。</p>
           <p className='mt-4'>皆様のご協力をキャスト一同、心よりお待ちしております✨</p>
