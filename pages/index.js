@@ -73,7 +73,7 @@ export default function Home({ posts }) {
           <h1 className='mt-1 text-2xl sm:text-3xl font-semibold text-center scroll-fx fx-c'>メンバー</h1>
           <div className='mt-16 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-12 sm:gap-y-16'>
             {casts.map((cast, index) => (
-              <div className='text-center scroll-fx fx-fade' key={index}>
+              <div className='text-center scroll-fx fx-c' key={index}>
                 <img className='rounded-full w-28 h-28 object-cover mx-auto' src={`/img/casts/${cast.id}.JPG`} alt='メンバー' />
                 <h1 className='mt-3 text-md font-semibold'>{cast.name}</h1>
                 <p className='mt-1 text-sm text-gray-600'>{cast.role}</p>
@@ -88,7 +88,7 @@ export default function Home({ posts }) {
           <div className='mt-16 grid grid-cols-1 sm:grid-cols-2 gap-4'>
             <Link href={`/news/geg`}>
               <a className='block'>
-                <div className='news-banner rounded bg-blue-700 hover:bg-blue-800 px-6 py-6 text-white scroll-fx fx-c'>
+                <div className='news-banner rounded bg-blue-700 hover:bg-blue-800 p-6 text-white scroll-fx fx-c'>
                   <h1 className='font-semibold'>Minecraftと教育</h1>
                   <p className='mt-2 text-sm line-clamp-multiple'>Minecraftを用いた未来の教育を考える「Minecraftと教育」ワークショップを開催！</p>
                   <p className='mt-4 text-xs text-gray-200'>2021.5.28 19:00 - 21:00</p>
