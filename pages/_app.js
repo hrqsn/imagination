@@ -1,9 +1,8 @@
 import Providers from '@/components/providers'
 import { useEffect } from 'react'
 
-import '@/styles/tailwind.css'
-import '@/styles/custom.css'
-import 'tailwindcss/utilities.css'
+import '@/styles/main.css'
+import '@/styles/chrome-bug.css'
 import '@/styles/prose.css'
 
 function MyApp({ Component, pageProps }) {
