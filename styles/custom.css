@@ -259,8 +259,7 @@
   }
 
   .scroll-fx.fx-img {
-    opacity: 0;
-    transform: translate3d(0,-10px,0);
+    opacity: .5;
   }
   .scroll-fx.fx-img.inshow {
     animation-name: img-fade;
@@ -273,16 +272,6 @@
     transform: translate3d(0,10px,0);
   }
   .scroll-fx.fx-c.inshow {
-    animation-name: img-fade;
-    animation-duration: 1.2s;
-    animation-fill-mode: forwards;
-  }
-
-  .scroll-fx.fx-fade {
-    opacity: 0;
-    transform: translate3d(0,10px,0);
-  }
-  .scroll-fx.fx-fade.inshow {
     animation-name: img-fade;
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
