@@ -60,7 +60,7 @@ export default function Home({ posts }) {
         <section className='relative py-32'>
           <div className='text-sm font-medium text-blue-800 subtitle s-line scroll-fx fx-slide'>VISION</div>
           <h1 className='mt-1 text-2xl sm:text-4xl font-semibold scroll-fx fx-slide'>いつでも、どこでも、<br className='block sm:hidden'/>ディズニーへ</h1>
-          <p className='mt-10 scroll-fx fx-fade'>Imagination Serverは、東京ディズニーリゾート®︎を愛する{casts.length}名のメンバーが、<br className='hidden sm:inline-block'/>Minecraft: Bedrock Editionを用いて完全再現する試みです。<br />&nbsp;<br />2017年8月に発足したこのプロジェクトは、<br className='hidden sm:inline-block'/>有志の社会人/学生によって非営利で運営されています。</p>
+          <p className='mt-10 scroll-fx fx-c'>Imagination Serverは、東京ディズニーリゾート®︎を愛する{casts.length}名のメンバーが、<br className='hidden sm:inline-block'/>Minecraft: Bedrock Editionを用いて完全再現する試みです。<br />&nbsp;<br />2017年8月に発足したこのプロジェクトは、<br className='hidden sm:inline-block'/>有志の社会人/学生によって非営利で運営されています。</p>
           <div className='mt-14 grid grid-cols-1 sm:grid-cols-2 gap-4'>
             <img className='rounded scroll-fx fx-c' src='/img/1.jpg' alt='ホテルミラコスタ' />
             <img className='rounded scroll-fx fx-c' src='/img/2.jpg' alt='ホテルミラコスタ2' />
@@ -70,7 +70,7 @@ export default function Home({ posts }) {
         </section>
         <section className='relative py-32'>
           <span className='text-sm block font-medium text-blue-800 subtitle text-center scroll-fx fx-c'>MEMBERS</span>
-          <h1 className='mt-1 text-2xl sm:text-4xl font-semibold text-center scroll-fx fx-c'>メンバー</h1>
+          <h1 className='mt-1 text-2xl sm:text-3xl font-semibold text-center scroll-fx fx-c'>メンバー</h1>
           <div className='mt-16 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-12 sm:gap-y-16'>
             {casts.map((cast, index) => (
               <div className='text-center scroll-fx fx-c' key={index}>
@@ -83,15 +83,15 @@ export default function Home({ posts }) {
         </section>
         <section className='relative py-32'>
           <span className='text-sm block font-medium text-blue-800 subtitle text-center scroll-fx fx-c'>EVENTS</span>
-          <h1 className='mt-1 text-2xl sm:text-4xl font-semibold text-center scroll-fx fx-c'>イベント</h1>
+          <h1 className='mt-1 text-2xl sm:text-3xl font-semibold text-center scroll-fx fx-c'>イベント</h1>
           {/* <p className='mt-16 text-center'>イベントはありません</p> */}
           <div className='mt-16 grid grid-cols-1 sm:grid-cols-2 gap-4'>
             <Link href={`/news/geg`}>
               <a className='block'>
-                <div className='news-banner rounded bg-blue-700 hover:bg-blue-800 px-6 py-8 text-white scroll-fx fx-c'>
+                <div className='news-banner rounded bg-blue-700 hover:bg-blue-800 p-6 text-white scroll-fx fx-c'>
                   <h1 className='font-semibold'>Minecraftと教育</h1>
                   <p className='mt-2 text-sm line-clamp-multiple'>Minecraftを用いた未来の教育を考える「Minecraftと教育」ワークショップを開催！</p>
-                  <span className='mt-2 text-xs'>2021.5.28 19:00 - 21:00</span>
+                  <p className='mt-4 text-xs text-gray-200'>2021.5.28 19:00 - 21:00</p>
                 </div>
               </a>
             </Link>

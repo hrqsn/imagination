@@ -26,8 +26,8 @@ export default function Status ({ land, sea }) {
 
       <main className='max-w-4xl mx-auto px-4'>
         <div className='mt-20 grid grid-cols-2 gap-x-10 gap-y-16'>
-          <section className='col-span-2 sm:col-span-1 relative'>
-            <img src='/img/land.jpg' className='rounded' />
+          <section className='col-span-2 sm:col-span-1 relative mx-auto'>
+            {/* <img src='/img/land.png' className='rounded' /> */}
             <h1 className='mt-8 text-xl font-semibold'>東京ディズニーランド</h1>
             {land.length === 0 ? (
               <p className='text-sm'>状況データがありません</p>
@@ -35,8 +35,8 @@ export default function Status ({ land, sea }) {
               <StatusList items={land} />
             )}
           </section>
-          <section className='col-span-2 sm:col-span-1 relative'>
-            <img src='/img/sea.jpg' className='rounded' />
+          <section className='col-span-2 sm:col-span-1 relative mx-auto'>
+            {/* <img src='/img/sea.png' className='rounded' /> */}
             <h1 className='mt-8 text-xl font-semibold'>東京ディズニーシー</h1>
             {sea.length === 0 ? (
               <p className='text-sm'>状況データがありません</p>
