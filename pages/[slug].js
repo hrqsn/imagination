@@ -15,7 +15,7 @@ export default function Terms ({ post }) {
       </Head>
 
       <Header />
-                
+
       <main className='max-w-screen-lg mx-auto px-4'>
         <div className='py-32'>
           <span className='text-sm block font-medium text-blue-800 subtitle text-center'>TERMS</span>

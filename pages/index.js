@@ -8,7 +8,7 @@ import Moment from 'react-moment'
 import { getAllPosts } from '@/lib/api'
 import casts from '../casts'
 
-export default function Home({ posts }) {
+export default function Home ({ posts }) {
   return (
     <>
       <Head>
@@ -25,7 +25,7 @@ export default function Home({ posts }) {
           </div>
         </div>
         <div className='video-wrapper'>
-          <video src="/bg.mp4" className="video" autoPlay playsInline loop muted></video>
+          <video src='/bg.mp4' className='video' autoPlay playsInline loop muted />
         </div>
       </section>
 
@@ -38,7 +38,7 @@ export default function Home({ posts }) {
                 <a className='block mt-2 text-sm text-gray-600'>一覧を見る</a>
               </Link>
             </div>
-            <div className='hidden md:block border-r border-gray-400'></div>
+            <div className='hidden md:block border-r border-gray-400' />
             <div className='mt-6 md:mt-0 space-y-2'>
               {posts.length === 0 ? (
                 <p className='text-sm'>ニュースはありません</p>
@@ -59,8 +59,8 @@ export default function Home({ posts }) {
         </section>
         <section className='relative py-32'>
           <div className='text-sm font-medium text-blue-800 subtitle s-line scroll-fx fx-slide'>VISION</div>
-          <h1 className='mt-1 text-2xl sm:text-4xl font-semibold scroll-fx fx-slide'>いつでも、どこでも、<br className='block sm:hidden'/>ディズニーへ</h1>
-          <p className='mt-10 scroll-fx fx-c'>Imagination Serverは、東京ディズニーリゾート®︎を愛する{casts.length}名のメンバーが、<br className='hidden sm:inline-block'/>Minecraft: Bedrock Editionを用いて完全再現する試みです。<br />&nbsp;<br />2017年8月に発足したこのプロジェクトは、<br className='hidden sm:inline-block'/>有志の社会人/学生によって非営利で運営されています。</p>
+          <h1 className='mt-1 text-2xl sm:text-4xl font-semibold scroll-fx fx-slide'>いつでも、どこでも、<br className='block sm:hidden' />ディズニーへ</h1>
+          <p className='mt-10 scroll-fx fx-c'>Imagination Serverは、東京ディズニーリゾート®︎を愛する{casts.length}名のメンバーが、<br className='hidden sm:inline-block' />Minecraft: Bedrock Editionを用いて完全再現する試みです。<br />&nbsp;<br />2017年8月に発足したこのプロジェクトは、<br className='hidden sm:inline-block' />有志の社会人/学生によって非営利で運営されています。</p>
           <div className='mt-14 grid grid-cols-1 sm:grid-cols-2 gap-4'>
             <img className='rounded scroll-fx fx-c' src='/img/1.jpg' alt='ホテルミラコスタ' />
             <img className='rounded scroll-fx fx-c' src='/img/2.jpg' alt='ホテルミラコスタ2' />
@@ -86,7 +86,7 @@ export default function Home({ posts }) {
           <h1 className='mt-1 text-2xl sm:text-3xl font-semibold text-center scroll-fx fx-c'>イベント</h1>
           {/* <p className='mt-16 text-center'>イベントはありません</p> */}
           <div className='mt-16 grid grid-cols-1 sm:grid-cols-2 gap-4'>
-            <Link href={`/news/geg`}>
+            <Link href='/news/geg'>
               <a className='block'>
                 <div className='news-banner rounded bg-blue-700 hover:bg-blue-800 p-6 text-white scroll-fx fx-c'>
                   <h1 className='font-semibold'>Minecraftと教育</h1>

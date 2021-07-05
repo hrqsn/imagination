@@ -18,9 +18,6 @@ module.exports = {
       colors: {
         primary: '#113485'
       },
-      fontFamily: {
-        sans: ['Noto Sans JP', ...defaultTheme.fontFamily.sans],
-      },
       typography: {
         DEFAULT: {
           css: {
