@@ -91,7 +91,7 @@ export default function Home ({ posts }) {
                 <div className='news-banner rounded bg-blue-700 hover:bg-blue-800 p-6 text-white scroll-fx fx-c'>
                   <h1 className='font-semibold'>Minecraftと教育</h1>
                   <p className='mt-2 text-sm line-clamp-multiple'>Minecraftを用いた未来の教育を考える「Minecraftと教育」ワークショップを開催！</p>
-                  <p className='mt-4 text-xs text-gray-200'>2021.5.28 19:00 - 21:00</p>
+                  <p className='mt-2 text-xs text-gray-200'>2021.5.28 19:00 - 21:00</p>
                 </div>
               </a>
             </Link>
