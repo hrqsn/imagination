@@ -28,7 +28,7 @@ export default function Visit () {
           <h1 className='text-2xl font-semibold text-center'>イベント内容</h1>
           <div className='mt-8 text-center space-y-3'>
             <p>2021年夏、Imagination Serverは5周年を迎えます。ここまで支えてくださったゲストの皆様への感謝を込めて、「<strong>ImaginationServer 5th Anniversary ~Thanks giving voyage~</strong>」を開催いたします！</p>
-            <p>今回のテーマカラーは祝福の赤。5周年に相応しい、バラ色に染まったパークが皆様のお越しをお待ちしております。</p>
+            <p>今回のテーマカラーは祝福の赤。5周年に相応しい、バラ色に染まったパークで皆様のお越しをお待ちしております。</p>
             <p>さあ、5周年のImagination Serverをお楽しみください！</p>
           </div>
 
