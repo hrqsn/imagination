@@ -15,7 +15,7 @@ export default function News ({ posts }) {
 
       <Header />
 
-      <section className='w-full section-image'　 style={{'backgroundImage': 'url("/img/news.png")'}}>
+      <section className='w-full section-image' style={{ backgroundImage: 'url("/img/news.png")' }}>
         <div className='w-full h-full flex items-center justify-center'>
           <div>
             <span className='text-xs sm:text-sm block font-medium text-gray-100 subtitle text-center'>NEWS</span>
@@ -23,7 +23,7 @@ export default function News ({ posts }) {
           </div>
         </div>
       </section>
-      
+
       <main className='max-w-4xl mx-auto px-4'>
         <section className='relative pt-32 flex justify-center'>
           {posts.length === 0 ? (

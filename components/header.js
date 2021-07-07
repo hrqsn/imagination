@@ -5,7 +5,7 @@ export default function Header () {
   const router = useRouter()
 
   const activeNavItem = (pathname) => {
-    return router.pathname === pathname ? 'text-black font-medium' : ''
+    return router.pathname === pathname ? 'text-black font-semibold' : ''
   }
 
   return (
