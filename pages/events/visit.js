@@ -28,7 +28,7 @@ export default function Visit () {
           <h1 className='text-2xl font-semibold text-center'>イベント内容</h1>
           <div className='mt-8 text-center space-y-3'>
             <p>2021年夏、Imagination Serverは5周年を迎えます。ここまで支えてくださったゲストの皆様への感謝を込めて、「<strong>ImaginationServer 5th Anniversary ~Thanks giving voyage~</strong>」を開催いたします！</p>
-            <p>今回のテーマカラーは祝福の赤。5周年に相応しい、バラ色に染まったパークで皆様のお越しをお待ちしております。</p>
+            <p>5周年に相応しい、ロイヤルブルーに染まったパークで皆様のお越しをお待ちしております。</p>
             <p>さあ、5周年のImagination Serverをお楽しみください！</p>
           </div>
 
@@ -39,7 +39,7 @@ export default function Visit () {
           <ul className='mt-8 space-y-3'>
             <li>1. 参加には <span className='underline'>Minecraft統合版<span className='text-sm'>(Windows10, スマホ, タブレット版)</span></span>, <span className='underline'>インターネット環境</span>, <span className='underline'>Discordアプリ(<a href='https://discord.com/' target='_blank' rel='noopener' className='text-sm underline text-blue-800'>ダウンロードリンク</a>)</span>が必要です。Minecraft Java, Switch, PS4版はサーバーへの接続ができません。予めご了承下さい。</li>
             <li>2. <a href='https://docs.google.com/forms/d/e/1FAIpQLScR0UE2coAooI0DxRC0xilU-YFQkyKQo90PxmP2K9aBlGaJ5g/viewform' target='_blank' rel='noopener' className='underline text-blue-800 font-semibold'>参加申請フォーム</a> から必要事項をご記入の上、回答を送信してください。送信後、Discordサーバーへの参加方法が表示されます。案内に沿って必ずご参加ください。</li>
-            <li>3. Discordサーバーに参加すると、詳細な参加方法や注意事項をご確認いただけます。ゲストの皆様やキャストとの交流を楽しみながら、開園までお待ちください。</li>
+            <li>3. Discordサーバーに参加すると、詳細な参加方法や注意事項をご確認いただけます。ゲストの皆様やキャストとの交流を楽しみながら、開園をお待ちください。</li>
           </ul>
 
           {/* <div className='relative w-full'>
