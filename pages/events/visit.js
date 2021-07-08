@@ -42,6 +42,10 @@ export default function Visit () {
             <li>3. Discordサーバーに参加すると、詳細な参加方法や注意事項をご確認いただけます。ゲストの皆様やキャストとの交流を楽しみながら、開園をお待ちください。</li>
           </ul>
 
+          <div className='mt-24'>
+            <iframe className='w-full rounded-lg' height='480' src="https://www.youtube.com/embed/COrXf7Pk8Bw?controls=0" title="YouTube video player" rel="0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
           {/* <div className='relative w-full'>
             <figure className='lg:-mx-8'>
               <div className='mt-24 rounded-md section-image' style={{'backgroundImage': 'url("/img/visit.jpg")'}}></div>
