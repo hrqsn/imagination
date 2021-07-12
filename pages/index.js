@@ -86,12 +86,12 @@ export default function Home ({ posts }) {
           <h1 className='mt-1 text-2xl sm:text-3xl font-semibold text-center scroll-fx fx-c'>イベント</h1>
           {/* <p className='mt-16 text-center'>イベントはありません</p> */}
           <div className='mt-16 grid grid-cols-1 sm:grid-cols-2 gap-4'>
-            <Link href='/news/geg'>
+            <Link href='/news/visit2021s'>
               <a className='block'>
                 <div className='news-banner rounded bg-blue-700 hover:bg-blue-800 p-6 text-white scroll-fx fx-c'>
-                  <h1 className='font-semibold'>Minecraftと教育</h1>
-                  <p className='mt-2 text-sm line-clamp-multiple'>Minecraftを用いた未来の教育を考える「Minecraftと教育」ワークショップを開催！</p>
-                  <p className='mt-2 text-xs text-gray-200'>2021.5.28 19:00 - 21:00</p>
+                  <h1 className='font-semibold'>ImaginationServer 5th Anniversary ~Thanks giving voyage~</h1>
+                  <p className='mt-2 text-sm line-clamp-multiple'>Imagination Server 5周年を記念した観光イベントを開催！</p>
+                  <p className='mt-2 text-xs text-gray-200'>2021.8.7 ~ 8.9 10:00 - 24:00</p>
                 </div>
               </a>
             </Link>
