@@ -18,17 +18,8 @@ module.exports = {
       colors: {
         primary: '#113485'
       },
-      typography: {
-        DEFAULT: {
-          css: {
-            'code::before': {
-              content: '""'
-            },
-            'code::after': {
-              content: '""'
-            }
-          }
-        }
+      fontFamily: {
+        sans: ['Noto Sans JP', ...defaultTheme.fontFamily.sans],
       }
     }
   },
