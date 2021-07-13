@@ -13,7 +13,7 @@ export default function Header () {
       <header className='max-w-screen-lg h-32 sm:h-20 mx-6 sm:mx-auto flex flex-col sm:flex-row justify-center sm:justify-between items-center px-4 space-y-6 sm:space-y-0'>
         <Link href='/'>
           <a>
-            <img src='/img/logo.png' alt='Imagination Server' className='h-6' />
+            <img src='/img/logo.svg' alt='Imagination Server' className='h-6' />
           </a>
         </Link>
         <nav className='nav-scroll space-x-9 text-gray-600 text-sm'>
