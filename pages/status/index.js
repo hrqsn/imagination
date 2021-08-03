@@ -19,7 +19,7 @@ export default function Status ({ land, sea }) {
         <div className='w-full h-full flex items-center justify-center'>
           <div>
             <span className='text-xs sm:text-sm block font-medium text-gray-100 subtitle text-center'>REPRODUCTION STATUS</span>
-            <h1 className='mt-1 text-xl sm:text-2xl font-semibold text-white text-center'>再現状況</h1>
+            <h1 className='mt-1 text-xl sm:text-2xl font-bold text-white text-center'>再現状況</h1>
           </div>
         </div>
       </section>
@@ -28,7 +28,7 @@ export default function Status ({ land, sea }) {
         <div className='mt-20 grid grid-cols-2 gap-x-10 gap-y-16'>
           <section className='col-span-2 sm:col-span-1 relative sm:mx-auto'>
             {/* <img src='/img/land.png' className='rounded' /> */}
-            <h1 className='mt-8 text-xl font-semibold'>東京ディズニーランド</h1>
+            <h1 className='mt-8 text-xl font-bold'>東京ディズニーランド</h1>
             {land.length === 0 ? (
               <p className='text-sm'>状況データがありません</p>
             ) : (
@@ -37,7 +37,7 @@ export default function Status ({ land, sea }) {
           </section>
           <section className='col-span-2 sm:col-span-1 relative sm:mx-auto'>
             {/* <img src='/img/sea.png' className='rounded' /> */}
-            <h1 className='mt-8 text-xl font-semibold'>東京ディズニーシー</h1>
+            <h1 className='mt-8 text-xl font-bold'>東京ディズニーシー</h1>
             {sea.length === 0 ? (
               <p className='text-sm'>状況データがありません</p>
             ) : (
