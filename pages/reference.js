@@ -16,7 +16,7 @@ export default function Visit () {
         <div className='w-full h-full flex items-center justify-center'>
           <div>
             <span className='text-xs sm:text-sm block font-medium text-gray-100 subtitle text-center'>REFERENCE</span>
-            <h1 className='mt-1 text-xl sm:text-2xl font-semibold text-white text-center'>資料提供</h1>
+            <h1 className='mt-1 text-xl sm:text-2xl font-bold text-white text-center'>資料提供</h1>
           </div>
         </div>
       </section>
@@ -27,7 +27,7 @@ export default function Visit () {
           <p>ご協力いただいた際は、ご希望に応じて私たちのワールドにお名前を記載させていただきます。</p>
           <p className='mt-4'>皆様のご協力をキャスト一同、心よりお待ちしております✨</p>
           <p className='mt-4 text-sm text-gray-500'>＊頂いた資料は再現時の使用に留め、外部に公開することはありません。</p>
-          <a href='https://forms.gle/Y2mPhrRB6f24Z2U76' target='_blank' rel='noopener' className='flex mt-8 font-semibold text-blue-600'>フォームはこちら →</a>
+          <a href='https://forms.gle/Y2mPhrRB6f24Z2U76' target='_blank' rel='noopener' className='flex mt-8 font-bold text-blue-600'>フォームはこちら →</a>
         </section>
         <section className='mt-24'>
           <h1 className='text-lg font-medium'>特に募集している資料</h1>

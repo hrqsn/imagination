@@ -19,7 +19,7 @@ export default function News ({ posts }) {
         <div className='w-full h-full flex items-center justify-center'>
           <div>
             <span className='text-xs sm:text-sm block font-medium text-gray-100 subtitle text-center'>NEWS</span>
-            <h1 className='mt-1 text-xl sm:text-2xl font-semibold text-white text-center'>ニュース</h1>
+            <h1 className='mt-1 text-xl sm:text-2xl font-bold text-white text-center'>ニュース</h1>
           </div>
         </div>
       </section>

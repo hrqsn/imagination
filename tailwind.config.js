@@ -1,5 +1,3 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
-
 module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false,
@@ -18,9 +16,6 @@ module.exports = {
       colors: {
         primary: '#113485'
       },
-      fontFamily: {
-        sans: ['Noto Sans JP', ...defaultTheme.fontFamily.sans],
-      }
     }
   },
   variants: {
