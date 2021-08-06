@@ -10,7 +10,13 @@ const SeoConfig = {
     url: 'https://imaginationserver.com',
     site_name: 'Imagination Server',
     title: 'Imagination Server',
-    description: 'Minecraftで東京ディズニーリゾート再現プロジェクト。'
+    description: 'Minecraftで東京ディズニーリゾート再現プロジェクト。',
+    images: [
+      {
+        url: 'https://imaginationserver.com/img/ogp.png',
+        alt: 'Imagination Server'
+      }
+    ]
   },
   twitter: {
     cardType: 'summary_large_image'
