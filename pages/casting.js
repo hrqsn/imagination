@@ -50,8 +50,7 @@ export default function Casting () {
           <p className='mt-8 text-center'>2021.08.10 ~ 2021.08.20 21:00</p>
 
           <h1 className='mt-24 text-2xl font-bold text-center'>応募方法</h1>
-          <p className='mt-8'>こちらのリンクからフォームを入力してご応募ください。</p>
-          <a className='underline text-blue-600 font-semibold' href="https://forms.gle/FJvtKrJtb4eXvWLQ8" target='_blank' rel='noopener noreferrer'>https://forms.gle/FJvtKrJtb4eXvWLQ8</a>
+          <p className='mt-8 text-center'><a className='underline text-blue-600 font-semibold' href="https://forms.gle/FJvtKrJtb4eXvWLQ8" target='_blank' rel='noopener noreferrer'>こちら</a> からフォームを入力してご応募ください。</p>
 
           <h1 className='mt-24 text-2xl font-bold text-center'>お問い合わせ</h1>
           <p className='mt-8'>Imagination Server キャスティングチーム (<a className='underline text-blue-600 font-semibold' href="mailto:castingline@imaginationserver.com">castingline@imaginationserver.com</a>) までメールでお問い合わせください。</p>
