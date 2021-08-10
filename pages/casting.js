@@ -41,7 +41,7 @@ export default function Casting () {
             <li>A. 年齢不問</li>
             <li>B. 活動(利用)規約に同意している</li>
             <li>C. 先述されているポリシーをよく読み、強く共感している</li>
-            <li>D. Minecraft BE(スマホ版もしくはWin10版)を所持している</li>
+            <li>D. Minecraft: Bedrock Edition(スマホ版もしくはWin10版)を所持している</li>
             <li>E. ゲーマータグを所持していて、マルチプレイが可能な環境がある</li>
             <li>F. オンライン上で、テキストに限らず声を使ってのコミュニケーションが可能である</li>
           </ul>
