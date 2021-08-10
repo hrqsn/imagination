@@ -23,6 +23,9 @@ export default function Header () {
           <Link href='/events/visit'>
             <a className={activeNavItem('/events/visit')}>観光企画</a>
           </Link>
+          <Link href='/casting'>
+            <a className={activeNavItem('/casting')}>キャスティング</a>
+          </Link>
           <Link href='/status'>
             <a className={activeNavItem('/status')}>再現状況</a>
           </Link>
