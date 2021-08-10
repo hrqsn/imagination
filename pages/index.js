@@ -86,12 +86,12 @@ export default function Home ({ posts }) {
           <h1 className='mt-1 text-2xl sm:text-3xl font-bold text-center scroll-fx fx-c'>イベント</h1>
           {/* <p className='mt-16 text-center'>イベントはありません</p> */}
           <div className='mt-16 grid grid-cols-1 sm:grid-cols-2 gap-4'>
-            <Link href='/news/visit2021s'>
+            <Link href='/news/casting2021'>
               <a className='block'>
                 <div className='news-banner rounded bg-blue-700 hover:bg-blue-800 p-6 text-white scroll-fx fx-c'>
-                  <h1 className='font-bold'>ImaginationServer 5th Anniversary ~Thanks giving voyage~</h1>
-                  <p className='mt-2 text-sm line-clamp-multiple'>Imagination Server 5周年を記念した観光イベントを開催！</p>
-                  <p className='mt-2 text-xs text-gray-200'>2021.8.7 ~ 8.9 10:00 - 24:00</p>
+                  <h1 className='font-bold'>キャスト募集を開始いたします！</h1>
+                  <p className='mt-2 text-sm line-clamp-multiple'>Imagination Serverでは、約2ぶりにメンバーを公募することになりました✨</p>
+                  <p className='mt-2 text-xs text-gray-200'>2021.8.10 ~ 2021.8.20 21:00</p>
                 </div>
               </a>
             </Link>
