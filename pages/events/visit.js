@@ -23,9 +23,10 @@ export default function Visit () {
 
       <main className='max-w-screen-md mx-auto px-4'>
         <section className='relative pt-32'>
-          {/* <p className='text-lg font-semibold text-center'>準備中</p>
-          <p className='mt-2 text-sm text-center'>Coming Soon.</p> */}
-          <h1 className='text-2xl font-bold text-center'>イベント内容</h1>
+          <p className='text-lg font-semibold text-center'>準備中</p>
+          <p className='mt-2 text-sm text-center'>Coming Soon.</p>
+          
+          {/* <h1 className='text-2xl font-bold text-center'>イベント内容</h1>
           <div className='mt-8 text-center space-y-3'>
             <p>2021年夏、Imagination Serverは5周年を迎えます。ここまで支えてくださったゲストの皆様への感謝を込めて、「<strong>ImaginationServer 5th Anniversary ~Thanks giving voyage~</strong>」を開催いたします！</p>
             <p>5周年に相応しい、ロイヤルブルーに染まったパークで皆様のお越しをお待ちしております。</p>
@@ -44,7 +45,7 @@ export default function Visit () {
 
           <div className='mt-24'>
             <iframe className='w-full rounded-lg' height='480' src="https://www.youtube.com/embed/COrXf7Pk8Bw?controls=0" title="YouTube video player" rel="0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
+          </div> */}
 
           {/* <div className='relative w-full'>
             <figure className='lg:-mx-8'>
