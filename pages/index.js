@@ -84,8 +84,8 @@ export default function Home ({ posts }) {
         <section className='relative py-32'>
           <span className='text-sm block font-medium text-blue-800 subtitle text-center scroll-fx fx-c'>EVENTS</span>
           <h1 className='mt-1 text-2xl sm:text-3xl font-bold text-center scroll-fx fx-c'>イベント</h1>
-          {/* <p className='mt-16 text-center'>イベントはありません</p> */}
-          <div className='mt-16 grid grid-cols-1 sm:grid-cols-2 gap-4'>
+          <p className='mt-16 text-center'>イベントはありません</p>
+          {/* <div className='mt-16 grid grid-cols-1 sm:grid-cols-2 gap-4'>
             <Link href='/news/casting2021'>
               <a className='block'>
                 <div className='news-banner rounded bg-blue-700 hover:bg-blue-800 p-6 text-white scroll-fx fx-c'>
@@ -95,7 +95,7 @@ export default function Home ({ posts }) {
                 </div>
               </a>
             </Link>
-          </div>
+          </div> */}
         </section>
       </Layout>
 
