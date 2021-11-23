@@ -28,8 +28,8 @@ export default function Visit () {
 
           <h1 className='text-2xl font-bold text-center'>イベント内容</h1>
           <div className='mt-8 text-center space-y-3'>
-            <p>この度、クリスマス ～ 年末にかけて皆様にご来園いただける「<strong>ImaginationServer 5th Anniversary ~fantastic symphony~</strong>」を開催いたします！</p>
-            <p>赤と緑に染まったImaginationServerをお楽しみください！</p>
+            <p>この度、クリスマス ～ 年末にかけて皆様にご来園いただける「<strong>Imagination Server 5th Anniversary ~fantastic symphony~</strong>」を開催いたします！</p>
+            <p>赤と緑に染まったImagination Serverをお楽しみください！</p>
           </div>
 
           <h1 className='mt-24 text-2xl font-bold text-center'>日時</h1>
@@ -46,11 +46,11 @@ export default function Visit () {
             <iframe className='w-full rounded-lg' height='480' src="https://www.youtube.com/embed/559VhmGvQvw?controls=0" title="YouTube video player" rel="0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
 
-          <div className='relative w-full'>
+          {/* <div className='relative w-full'>
             <figure className='lg:-mx-8'>
               <div className='mt-24 rounded-md section-image' style={{'backgroundImage': 'url("/img/visit.jpg")'}}></div>
             </figure>
-          </div>
+          </div> */}
         </section>
       </main>
 
