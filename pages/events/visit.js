@@ -33,7 +33,7 @@ export default function Visit () {
           </div>
 
           <h1 className='mt-24 text-2xl font-bold text-center'>日時</h1>
-          <p className='mt-8 text-center'>12/23(土) ~ 12/25(月), 12/31(金) 10:00 ~ 24:00</p>
+          <p className='mt-8 text-center'>12/24(金) ~ 12/26(日), 12/31(金) 10:00 ~ 24:00</p>
 
           <h1 className='mt-24 text-2xl font-bold text-center'>参加方法</h1>
           <ul className='mt-8 space-y-3'>
