@@ -84,18 +84,21 @@ export default function Home ({ posts }) {
         <section className='relative py-32'>
           <span className='text-sm block font-medium text-blue-800 subtitle text-center scroll-fx fx-c'>EVENTS</span>
           <h1 className='mt-1 text-2xl sm:text-3xl font-bold text-center scroll-fx fx-c'>イベント</h1>
-          <p className='mt-16 text-center'>イベントはありません</p>
-          {/* <div className='mt-16 grid grid-cols-1 sm:grid-cols-2 gap-4'>
+          {/* イベントなしの場合 */}
+          {/* <p className='mt-16 text-center'>イベントはありません</p> */}
+          
+          {/* イベント一覧 */}
+          <div className='mt-16 grid grid-cols-1 sm:grid-cols-2 gap-4'>
             <Link href='/news/casting2021'>
               <a className='block'>
                 <div className='news-banner rounded bg-blue-700 hover:bg-blue-800 p-6 text-white scroll-fx fx-c'>
-                  <h1 className='font-bold'>キャスト募集を開始いたします！</h1>
-                  <p className='mt-2 text-sm line-clamp-multiple'>Imagination Serverでは、約2年ぶりにメンバーを公募することになりました✨</p>
-                  <p className='mt-2 text-xs text-gray-200'>2021.8.10 ~ 2021.8.20 21:00</p>
+                  <h1 className='font-bold'>観光企画「Imagination Server 5th Anniversary ~fantastic symphony~」を開催！</h1>
+                  <p className='mt-2 text-sm line-clamp-multiple'>Imagination Server 5周年を記念した観光イベントを開催します✨</p>
+                  <p className='mt-2 text-xs text-gray-200'>クリスマス, ニューイヤーズ・イヴ</p>
                 </div>
               </a>
             </Link>
-          </div> */}
+          </div>
         </section>
       </Layout>
 
