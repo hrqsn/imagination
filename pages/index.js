@@ -89,7 +89,7 @@ export default function Home ({ posts }) {
           
           {/* イベント一覧 */}
           <div className='mt-16 grid grid-cols-1 sm:grid-cols-2 gap-4'>
-            <Link href='/news/casting2021'>
+            <Link href='/news/visit2021w'>
               <a className='block'>
                 <div className='news-banner rounded bg-blue-700 hover:bg-blue-800 p-6 text-white scroll-fx fx-c'>
                   <h1 className='font-bold'>観光企画「Imagination Server 5th Anniversary ~fantastic symphony~」を開催！</h1>
