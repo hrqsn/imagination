@@ -12,7 +12,7 @@ export default function Visit () {
 
       <Header />
 
-      <section className='w-full section-image' style={{ backgroundImage: 'url("/img/visit.jpg")' }}>
+      <section className='w-full section-image' style={{ backgroundImage: 'url("/img/visit.webp")' }}>
         <div className='w-full h-full flex items-center justify-center'>
           <div>
             <span className='text-xs sm:text-sm block font-medium text-gray-100 subtitle text-center'>KANKO KIKAKU</span>
@@ -48,7 +48,7 @@ export default function Visit () {
 
           {/* <div className='relative w-full'>
             <figure className='lg:-mx-8'>
-              <div className='mt-24 rounded-md section-image' style={{'backgroundImage': 'url("/img/visit.jpg")'}}></div>
+              <div className='mt-24 rounded-md section-image' style={{'backgroundImage': 'url("/img/visit.webp")'}}></div>
             </figure>
           </div> */}
         </section>

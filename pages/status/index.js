@@ -15,7 +15,7 @@ export default function Status ({ land, sea }) {
 
       <Header />
 
-      <section className='w-full section-image' style={{ backgroundImage: 'url("/img/reproduction.JPG")' }}>
+      <section className='w-full section-image' style={{ backgroundImage: 'url("/img/reproduction.webp")' }}>
         <div className='w-full h-full flex items-center justify-center'>
           <div>
             <span className='text-xs sm:text-sm block font-medium text-gray-100 subtitle text-center'>REPRODUCTION STATUS</span>
