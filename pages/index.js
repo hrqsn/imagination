@@ -8,7 +8,7 @@ import Moment from 'react-moment'
 import { getAllPosts } from '@/lib/api'
 import casts from '../casts'
 
-export default function Home ({ posts }) {
+export default function Home ({ letestPosts }) {
   return (
     <>
       <Head>
@@ -25,7 +25,7 @@ export default function Home ({ posts }) {
           </div>
         </div>
         <div className='video-wrapper'>
-          <video src='/bg.mp4' className='video' autoPlay playsInline loop muted />
+          <video src='/bg.mp4' preload='auto' className='video' autoPlay playsInline loop muted />
         </div>
       </section>
 
@@ -40,11 +40,11 @@ export default function Home ({ posts }) {
             </div>
             <div className='hidden md:block border-r border-gray-400' />
             <div className='mt-6 md:mt-0 space-y-2'>
-              {posts.length === 0 ? (
+              {letestPosts.length === 0 ? (
                 <p className='text-sm'>ニュースはありません</p>
               ) : (
                 <>
-                  {posts.map((post, i) => (
+                  {letestPosts.map((post, i) => (
                     <div className='text-sm flex space-x-6' key={i}>
                       <span className='font-bold'><Moment format='YYYY.MM.DD'>{post.date}</Moment></span>
                       <Link href={`/news/${post.slug}`}>
@@ -62,10 +62,10 @@ export default function Home ({ posts }) {
           <h1 className='mt-1 text-2xl sm:text-4xl font-bold scroll-fx fx-slide'>いつでも、どこでも、<br className='block sm:hidden' />ディズニーへ</h1>
           <p className='mt-10 scroll-fx fx-c'>Imagination Serverは、東京ディズニーリゾート®︎を愛する{casts.length}名のメンバーが、<br className='hidden sm:inline-block' />Minecraft: Bedrock Editionを用いて完全再現する試みです。<br />&nbsp;<br />2017年8月に発足したこのプロジェクトは、<br className='hidden sm:inline-block' />有志の社会人/学生によって非営利で運営されています。</p>
           <div className='mt-14 grid grid-cols-1 sm:grid-cols-2 gap-4'>
-            <img className='rounded scroll-fx fx-c' src='/img/1.webp' alt='ホテルミラコスタ' />
-            <img className='rounded scroll-fx fx-c' src='/img/2.webp' alt='ホテルミラコスタ2' />
-            <img className='rounded scroll-fx fx-c' src='/img/3.webp' alt='マーメイドラグーン' />
-            <img className='rounded scroll-fx fx-c' src='/img/4.webp' alt='シンデレラ城' />
+            <img className='rounded scroll-fx fx-c' src='/img/1.webp' alt='ホテルミラコスタ' loading='lazy' />
+            <img className='rounded scroll-fx fx-c' src='/img/2.webp' alt='ホテルミラコスタ2' loading='lazy' />
+            <img className='rounded scroll-fx fx-c' src='/img/3.webp' alt='マーメイドラグーン' loading='lazy' />
+            <img className='rounded scroll-fx fx-c' src='/img/4.webp' alt='シンデレラ城' loading='lazy' />
           </div>
         </section>
         <section className='relative py-32'>
@@ -74,7 +74,7 @@ export default function Home ({ posts }) {
           <div className='mt-16 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-12 sm:gap-y-16'>
             {casts.map((cast, index) => (
               <div className='text-center scroll-fx fx-c' key={index}>
-                <img className='rounded-full w-28 h-28 object-cover mx-auto' src={`/img/casts/${cast.id}.webp`} alt='メンバー' />
+                <img className='rounded-full w-28 h-28 object-cover mx-auto' src={`/img/casts/${cast.id}.webp`} alt='メンバー' loading='lazy' />
                 <h1 className='mt-3 text-md font-bold'>{cast.name}</h1>
                 <p className='mt-1 text-sm text-gray-600'>{cast.role}</p>
               </div>
@@ -115,10 +115,12 @@ export async function getStaticProps () {
     'coverImage',
     'date'
   ])
+  // 最新の3つのニュースを抽出
+  const letestPosts = posts.slice(0, 3)
 
   return {
     props: {
-      posts: posts
+      letestPosts: letestPosts
     }
   }
 }
