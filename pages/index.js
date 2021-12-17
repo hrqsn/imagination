@@ -25,7 +25,10 @@ export default function Home ({ letestPosts }) {
           </div>
         </div>
         <div className='video-wrapper'>
-          <video src='/bg.mp4' preload='auto' className='video' autoPlay playsInline loop muted />
+          <video className='video' autoPlay playsInline loop muted>
+            <source src='/bg.webm' type='video/webm' />
+            <source src='/bg.mp4' type='video/mp4' />
+          </video>
         </div>
       </section>
 

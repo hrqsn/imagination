@@ -43,7 +43,7 @@ export default function Visit () {
           </ul>
 
           <div className='mt-24'>
-            <iframe className='w-full rounded-lg' height='480' src="https://www.youtube.com/embed/559VhmGvQvw?controls=0" title="YouTube video player" rel="0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe className='w-full rounded-lg' height='480' src="https://www.youtube.com/embed/559VhmGvQvw?controls=0" title="YouTube video player" rel="0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
 
           {/* <div className='relative w-full'>
