@@ -4,11 +4,12 @@ import Layout from '@/components/layout'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
 import Moment from 'react-moment'
+import dayjs from 'dayjs'
 
-import { getAllPosts } from '@/lib/api'
+import { getAllPosts, getAllEvents } from '@/lib/api'
 import casts from '../casts'
 
-export default function Home ({ letestPosts }) {
+export default function Home ({ letestPosts, latestEvents }) {
   return (
     <>
       <Head>
@@ -87,21 +88,25 @@ export default function Home ({ letestPosts }) {
         <section className='relative py-32'>
           <span className='text-sm block font-medium text-blue-800 subtitle text-center scroll-fx fx-c'>EVENTS</span>
           <h1 className='mt-1 text-2xl sm:text-3xl font-bold text-center scroll-fx fx-c'>イベント</h1>
-          {/* イベントなしの場合 */}
-          <p className='mt-16 text-center'>イベントはありません</p>
-
           {/* イベント一覧 */}
-          {/*<div className='mt-16 grid grid-cols-1 sm:grid-cols-2 gap-4'>
-            <Link href='/news/visit2021w'>
-              <a className='block'>
-                <div className='news-banner rounded bg-blue-700 hover:bg-blue-800 p-6 text-white scroll-fx fx-c'>
-                  <h1 className='font-bold'>観光企画「Imagination Server 5th Anniversary ~fantastic symphony~」を開催！</h1>
-                  <p className='mt-2 text-sm line-clamp-multiple'>Imagination Server 5周年を記念した観光イベントを開催します✨</p>
-                  <p className='mt-2 text-xs text-gray-200'>クリスマス, ニューイヤーズ・イヴ</p>
-                </div>
-              </a>
-            </Link>
-          </div>*/}
+          {latestEvents.length === 0 ? (
+                <p className='mt-16 text-center'>イベントはありません</p>
+          ) : (
+            <>
+              {latestEvents.map((event, i) => (
+                <div className='mt-16 grid grid-cols-1 sm:grid-cols-2 gap-4' key={i}>
+                  <Link href={`/news/${event.slug}`}>
+                  <a className='block'>
+                    <div className='news-banner rounded bg-blue-700 hover:bg-blue-800 p-6 text-white scroll-fx fx-c'>
+                      <h1 className='font-bold'>{event.title}</h1>
+                      <p className='mt-2 text-sm line-clamp-multiple'>{event.subtitle}</p>
+                    </div>
+                  </a>
+                  </Link>
+                  </div>
+              ))}
+            </>
+          )}
         </section>
       </Layout>
 
@@ -121,9 +126,19 @@ export async function getStaticProps () {
   // 最新の3つのニュースを抽出
   const letestPosts = posts.slice(0, 3)
 
+  const events = getAllEvents('news', [
+    'slug',
+    'title',
+    'subtitle',
+    'date'
+  ])
+  // 最新の4つのイベントを抽出
+  const latestEvents = events.slice(0, 4).filter(event => dayjs(event.date).isAfter(dayjs().subtract(3, 'month')))
+
   return {
     props: {
-      letestPosts: letestPosts
+      letestPosts: letestPosts,
+      latestEvents: latestEvents
     }
   }
 }
