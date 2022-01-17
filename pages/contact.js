@@ -23,7 +23,7 @@ export default function Visit () {
 
       <main className='max-w-screen-lg mx-auto px-4'>
         <section className='relative pt-32'>
-          <p className='text-center'>質問やご連絡等は以下のメールアドレス、または「カスタマーサポート」TwitterアカウントのDMまでお願いいたします。</p>
+          <p className='text-center'>質問やご連絡等は以下のメールアドレス、または「サポートセンター」TwitterアカウントのDMまでお願いいたします。</p>
           <br />
           <p className='text-center'>contact(at)imaginationserver.com</p>
           <a href='https://twitter.com/imasaba_support/' target='_blank' rel='noopener noreferrer' className='block mt-2 underline text-blue-800 text-center'>Twitter →</a>
