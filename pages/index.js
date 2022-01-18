@@ -3,7 +3,6 @@ import Link from 'next/link'
 import Layout from '@/components/layout'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
-import Moment from 'react-moment'
 import dayjs from 'dayjs'
 
 import { getAllPosts, getAllEvents } from '@/lib/api'
@@ -50,7 +49,7 @@ export default function Home ({ letestPosts, latestEvents }) {
                 <>
                   {letestPosts.map((post, i) => (
                     <div className='text-sm flex space-x-6' key={i}>
-                      <span className='font-bold'><Moment format='YYYY.MM.DD'>{post.date}</Moment></span>
+                      <span className='font-bold'>{dayjs(post.date).format('YYYY.MM.DD')}</span>
                       <Link href={`/news/${post.slug}`}>
                         <a className='block underline line-clamp-multiple'>{post.title}</a>
                       </Link>

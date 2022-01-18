@@ -14,13 +14,11 @@
     "gray-matter": "^4.0.3",
     "markdown-it": "^12.0.6",
     "markdown-it-implicit-figures": "^0.10.0",
-    "moment": "^2.29.1",
     "next": "^11.1.1",
     "next-seo": "^4.24.0",
     "postcss": "^8.2.13",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-moment": "^1.1.1",
     "tailwindcss": "^2.1.2"
   }
 }
