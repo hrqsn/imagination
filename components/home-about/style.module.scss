@@ -1,0 +1,156 @@
+@import '@/styles/utils/utils';
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 24px;
+  margin: 240px auto 0;
+
+  .header {
+    &__subtitle {
+      font-size: $font-xs;
+      font-family: $font-meticula;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: $c-gray-6;
+      overflow: hidden;
+  
+      span  {
+        transform: translateY((50%));
+        opacity: 0;
+        display: inline-block;
+        will-change: transform, opacity;
+      }
+    }
+
+    &__title {
+      font-size: $font-lg;
+      font-family: $font-meticula;
+      font-weight: 700;
+      margin-top: 8px;
+      overflow: hidden;
+  
+      span  {
+        transform: translateY((50%));
+        opacity: 0;
+        display: inline-block;
+        will-change: transform, opacity;
+      }
+    }
+  
+    &__body {
+      margin-top: 48px;
+      font-size: $font-sm;
+      line-height: 1.6;
+      
+      p:last-child {
+        margin-top: 16px;
+      }
+      
+      div {
+        overflow: hidden;
+
+        span  {
+          transform: translateY((50%));
+          opacity: 0;
+          display: block;
+          will-change: transform, opacity;
+        }
+      }
+    }
+
+    @include media('<phone') {
+      &__title {
+        font-size: $font-md;
+      }
+    }
+  }
+
+  .gallery {
+    margin-top: 80px;
+
+    &__item {
+      position: relative;
+      margin-top: 32px;
+      opacity: 0;
+      transform: translateY(16px);
+      
+      [data-scroll] {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        overflow: hidden;
+        will-change: transform;
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      img {
+        object-fit: cover;
+      }
+    }
+
+    .gallery_0 {
+      width: 200px;
+      height: 120px;
+      
+      [data-scroll], img {
+        border-radius: 6px;
+      }
+    }
+
+    .gallery_1 {
+      width: 260px;
+      height: 180px;
+      margin-left: auto;
+      margin-right: -24px;
+
+      [data-scroll], img {
+        border-radius: 6px 0 0 6px;
+      }
+    }
+
+    .gallery_2 {
+      width: 320px;
+      height: 160px;
+      margin-left: -24px;
+
+      [data-scroll], img {
+        border-radius: 0 6px 6px 0;
+      }
+    }
+
+    @include media('>phone') {
+      margin-top: 180px;
+
+      &__item {
+        margin-top: 80px;
+
+        img {
+          border-radius: 6px !important;
+        }
+      }
+  
+      .gallery_0 {
+        width: 480px;
+        height: 240px;
+      }
+  
+      .gallery_1 {
+        width: 800px;
+        height: 400px;
+        margin-right: 0;
+      }
+
+      .gallery_2 {
+        width: 720px;
+        height: 320px;
+        margin-left: 0;
+      }
+    }
+  }
+}

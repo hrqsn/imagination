@@ -1,0 +1,126 @@
+@import '@/styles/utils/utils';
+
+.container {
+  margin-top: 240px;
+  
+  .wrapper {
+    max-width: 1200px;
+    padding: 0 24px;
+    margin: 0 auto;
+  }
+
+  .header {
+    text-align: center;
+
+    &__subtitle {
+      font-size: $font-xs;
+      font-family: $font-meticula;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: $c-gray-6;
+      overflow: hidden;
+
+      span {
+        display: inline-block;
+        opacity: 0;
+        transform: translateY(24px);
+        will-change: transform, opacity;
+      }
+    }
+
+    &__title {
+      font-size: $font-lg;
+      font-weight: 600;
+      margin-top: 8px;
+      overflow: hidden;
+
+      span {
+        display: inline-block;
+        opacity: 0;
+        transform: translateY(24px);
+        will-change: transform, opacity;
+      }
+    }
+  }
+
+  .content {
+    margin-top: 96px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .news__wrapper {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid $c-border;
+    opacity: 0;
+    transform: translateY(24px);
+    transition: color .4s ease;
+    will-change: transform, opacity;
+
+    &:last-child {
+      margin-bottom: 0;
+      border: none;
+    }
+
+    .news {
+      display: flex;
+      align-items: center;
+
+      &__date {
+        font-size: $font-sm;
+        font-weight: 600;
+        min-width: 72px;
+        margin-right: 48px;
+      }
+  
+      &__title {
+        font-size: $font-sm;
+      }
+    }
+
+    &:hover {
+      color: $c-gray-5;
+    }
+
+    @include media('<phone') {
+      .news {
+        flex-direction: column;
+        align-items: start;
+
+        &__title {
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+
+  .more {
+    font-size: $font-sm;
+    margin-top: 48px;
+    text-align: center;
+    color: $c-gray-6;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: color .4s ease;
+    will-change: transform, opacity;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      
+      span {
+        line-height: 1;
+        margin-right: 8px;
+      }
+
+      svg {
+        transform: translateY(-2px);
+      }
+    }
+
+    &:hover {
+      color: $c-gray-4;
+    }
+  }
+}

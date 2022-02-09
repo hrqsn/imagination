@@ -1,0 +1,58 @@
+@import '@/styles/utils/utils';
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  height: 400px;
+  padding: 0 24px;
+  margin: 0 auto;
+
+  @include media('<phone') {
+    padding: 0;
+    height: 200px;
+
+    .inner {
+      border-radius: 0 !important;
+
+      &::before {
+        border-radius: 0 !important;
+      }
+    }
+  }
+
+  .inner {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.3);
+      background-image: radial-gradient(#111 12%, transparent 13%), radial-gradient(#111 12%, transparent 13%);
+      background-size: 4px 4px;
+      background-position: 0 0, 2px 2px;
+      border-radius: 8px;
+    }
+  }
+
+  .title {
+    position: relative;
+    font-size: $font-md;
+    font-weight: 600;
+    color: $c-white;
+  }
+}

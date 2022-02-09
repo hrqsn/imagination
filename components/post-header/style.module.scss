@@ -1,0 +1,44 @@
+@import '@/styles/utils/utils';
+
+.container {
+  margin-top: 48px;
+
+  .back {
+    font-size: $font-sm;
+    color: $c-gray-6;
+  }
+
+  .title {
+    font-size: $font-md;
+    font-weight: 600;
+    margin-top: 24px;
+  }
+
+  .date {
+    font-size: $font-xs;
+    color: $c-gray-5;
+    margin-top: 16px;
+  }
+
+  .image {
+    margin-top: 40px;
+    border-radius: 6px;
+  }
+
+  @include media('<phone') {
+    margin-top: 24px;
+
+    .title {
+      font-size: $font-base;
+      margin-top: 16px;
+    }
+
+    .date {
+      margin-top: 8px;
+    }
+
+    .image {
+      margin-top: 24px;
+    }
+  }
+}

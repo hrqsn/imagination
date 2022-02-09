@@ -1,0 +1,44 @@
+@import '@/styles/utils/utils';
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 24px;
+  row-gap: 64px;
+
+  @include media('<phone') {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 32px;
+  }
+}
+
+.post {
+  transition: color .4s ease;
+
+  a {
+    display: block;
+  }
+
+  &__image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  &__title {
+    font-size: $font-sm;
+    font-weight: 600;
+    margin-top: 12px;
+  }
+
+  &__date {
+    font-size: $font-xs;
+    color: $c-gray-6;
+    margin-top: 6px;
+  }
+
+  &:hover {
+    color: $c-gray-5;
+  }
+}

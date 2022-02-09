@@ -1,0 +1,89 @@
+@import '@/styles/utils/utils';
+
+.container {
+  margin-top: 240px;
+  
+  .wrapper {
+    max-width: 1200px;
+    padding: 0 24px;
+    margin: 0 auto;
+  }
+
+  .header {
+    text-align: center;
+
+    &__subtitle {
+      font-size: $font-xs;
+      font-family: $font-meticula;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: $c-gray-6;
+      overflow: hidden;
+
+      span {
+        display: inline-block;
+        opacity: 0;
+        transform: translateY(24px);
+        will-change: transform, opacity;
+      }
+    }
+
+    &__title {
+      font-size: $font-lg;
+      font-weight: 600;
+      margin-top: 8px;
+      overflow: hidden;
+
+      span {
+        display: inline-block;
+        opacity: 0;
+        transform: translateY(24px);
+        will-change: transform, opacity;
+      }
+    }
+  }
+
+  .content {
+    margin-top: 80px;
+
+    .members {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      row-gap: 64px;
+
+      @include media('<tablet') {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      @include media('<phone') {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .member {
+        text-align: center;
+        opacity: 0;
+        transform: translateY(12px);
+        will-change: transform, opacity;
+
+        &__avatar {
+          width: 96px;
+          height: 96px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        &__name {
+          font-size: $font-sm;
+          font-weight: 600;
+          margin-top: 16px;
+        }
+
+        &__role {
+          font-size: $font-xxs;
+          margin-top: 4px;
+          color: $c-gray-6;
+        }
+      }
+    }
+  }
+}
