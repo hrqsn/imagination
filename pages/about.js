@@ -1,3 +1,4 @@
+import Status from '@/components/about-status'
 import PageHeader from '@/components/page-header'
 import SectionWrapper from '@/components/section-wrapper'
 
@@ -23,6 +24,9 @@ export default function About () {
         </section>
         <section className='section'>
           <h4>再現状況</h4>
+          <div className='section__body'>
+            <Status />
+          </div>
         </section>
         <section className='section'>
           <h4>資料提供</h4>

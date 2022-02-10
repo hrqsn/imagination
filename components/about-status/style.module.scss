@@ -1,0 +1,26 @@
+@import '@/styles/utils/utils';
+
+.item {
+  width: 100%;
+  border: 1px solid $c-border;
+  border-radius: 6px;
+  margin-top: 16px;
+  padding: 0 24px;
+  height: 64px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  .inner {
+    font-size: $font-sm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+
+    a {
+      display: block;
+    }
+  }
+}
