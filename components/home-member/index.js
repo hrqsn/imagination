@@ -1,6 +1,5 @@
 import Image from 'next/image'
-import { useContext, useEffect } from 'react'
-import { ScrollContext } from '@/components/scroller'
+import { useEffect } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import casts from '@/casts.json'
@@ -10,15 +9,10 @@ gsap.registerPlugin(ScrollTrigger)
 import s from './style.module.scss'
 
 export default function Member () {
-  const { ready } = useContext(ScrollContext)
-
   useEffect(() => {
-    if (!ready) return
-
     gsap.timeline({
       scrollTrigger: {
         trigger: `.${s.members}`,
-        scroller: '[data-scroll-container]',
         start: 'top center',
         end: 'bottom top'
       }
@@ -43,7 +37,7 @@ export default function Member () {
         amount: 0.4
       }
     }, '<')
-  }, [ready])
+  }, [])
 
   return (
     <section className={s.container}>

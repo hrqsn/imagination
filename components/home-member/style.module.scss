@@ -76,6 +76,10 @@
           font-size: $font-sm;
           font-weight: 600;
           margin-top: 16px;
+
+          @include media('<phone') {
+            margin-top: 8px;
+          }
         }
 
         &__role {

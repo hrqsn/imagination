@@ -461,7 +461,7 @@ locomotive-scroll@^4.1.3:
     smoothscroll-polyfill "^0.4.4"
     virtual-scroll "^1.5.2"
 
-loose-envify@^1.1.0, loose-envify@^1.4.0:
+loose-envify@^1.1.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
   integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
@@ -593,6 +593,13 @@ once@^1.3.1, once@^1.4.0:
   dependencies:
     wrappy "1"
 
+parallax-controller@^1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/parallax-controller/-/parallax-controller-1.3.3.tgz#101ef5e4530d69e9f915b39e3b81ad4696a68006"
+  integrity sha512-GDHvMl3UbKna0bOwwB8Q+dBkpIo2DlJFj3WJElDHZFFEI47aoqQND3paHrqFez1Z64AVQSWeHax+4e6ljE9Sew==
+  dependencies:
+    bezier-easing "^2.1.0"
+
 picocolors@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.0.0.tgz#cb5bdc74ff3f51892236eaf79d68bc44564ab81c"
@@ -636,15 +643,6 @@ process-nextick-args@~2.0.0:
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
   integrity sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
 
-prop-types@^15.8.1:
-  version "15.8.1"
-  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
-  integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
-  dependencies:
-    loose-envify "^1.4.0"
-    object-assign "^4.1.1"
-    react-is "^16.13.1"
-
 pump@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/pump/-/pump-3.0.0.tgz#b4a2116815bde2f4e1ea602354e8c75565107a64"
@@ -672,15 +670,12 @@ react-dom@17.0.2:
     object-assign "^4.1.1"
     scheduler "^0.20.2"
 
-react-is@^16.13.1:
-  version "16.13.1"
-  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
-  integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
-
-react-lazyload@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/react-lazyload/-/react-lazyload-3.2.0.tgz#497bd06a6dbd7015e3376e1137a67dc47d2dd021"
-  integrity sha512-zJlrG8QyVZz4+xkYZH5v1w3YaP5wEFaYSUWC4CT9UXfK75IfRAIEdnyIUF+dXr3kX2MOtL1lUaZmaQZqrETwgw==
+react-scroll-parallax@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/react-scroll-parallax/-/react-scroll-parallax-3.0.3.tgz#1bb5aec113070043ee613a2bb8e649873c98c4da"
+  integrity sha512-GDmCk6PmHBZg9+Kb3P5hntr+MmVZrAv1EEyrbF1wXzS8TqOYDsoUuJYS9xtm/hi8JP0DywzE9oXfVNmDykHA/w==
+  dependencies:
+    parallax-controller "^1.3.3"
 
 react@17.0.2:
   version "17.0.2"

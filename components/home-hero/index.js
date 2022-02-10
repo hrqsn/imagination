@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import Parallax from '@/components/parallax'
 import gsap from 'gsap'
 
 import s from './style.module.scss'
@@ -54,13 +55,13 @@ export default function Hero () {
         </div>
       </div>
       <div className={s.video}>
-        <div className={s.video__wrapper} data-scroll>
-          <div data-scroll data-scroll-speed='-1'>
+        <div className={s.video__wrapper}>
+          <Parallax speed={-1}>
             <video className={s.video__content} poster='/img/bg.webp' playsInline autoPlay loop muted>
               <source src='/img/bg.webm' type='video/webm' />
               <source src='/img/bg.mp4' type='video/mp4' />
             </video>
-          </div>
+          </Parallax>
         </div>
       </div>
     </div>

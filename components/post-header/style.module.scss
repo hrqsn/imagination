@@ -1,8 +1,6 @@
 @import '@/styles/utils/utils';
 
 .container {
-  margin-top: 48px;
-
   .back {
     font-size: $font-sm;
     color: $c-gray-6;
@@ -26,8 +24,6 @@
   }
 
   @include media('<phone') {
-    margin-top: 24px;
-
     .title {
       font-size: $font-base;
       margin-top: 16px;

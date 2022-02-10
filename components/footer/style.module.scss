@@ -1,33 +1,33 @@
 @import '@/styles/utils/utils';
 
-.footer {
+.container {
   width: 100%;
   margin-top: 240px;
   background: $c-gray-0;
 
-  &__inner {
+  .inner {
     padding: 128px 16px 256px;
   }
 
   @include media('<phone') {
-    &__inner {
+    .inner {
       padding: 128px 16px 160px;
     }
   }
 
-  &__links {
+  .links {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
   }
 
-  &__link {
+  .link {
     font-size: $font-xs;
     margin: 4px 16px;
   }
 
-  &__social {
+  .social {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,7 +42,7 @@
     }
   }
 
-  &__notice {
+  .notice {
     margin-top: 64px;
     font-size: $font-xxs;
     color: $c-gray-6;

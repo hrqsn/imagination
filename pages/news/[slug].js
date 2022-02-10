@@ -1,7 +1,7 @@
 import Error from 'next/error'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import SectionWrapper from '@/components/section-wrapper'
+import PostWrapper from '@/components/post-wrapper'
 import PostHeader from '@/components/post-header'
 import PostBody from '@/components/post-body'
 import markdownToHtml from '@/lib/markdownToHtml'
@@ -19,14 +19,14 @@ export default function Blog ({ post }) {
         <title>{post.title} | Imagination Server</title>
       </Head>
 
-      <SectionWrapper>
+      <PostWrapper>
         <PostHeader
           title={post.title}
           coverImage={post.coverImage}
           date={post.date}
         />
         <PostBody content={post.content} />
-      </SectionWrapper>
+      </PostWrapper>
     </>
   )
 }

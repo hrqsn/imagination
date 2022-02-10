@@ -1,12 +1,12 @@
 @import '@/styles/utils/utils';
 
-.navigation {
+.container {
   position: relative;
   z-index: z('navigation');
   height: 160px;
 }
 
-.navigation__wrapper {
+.wrapper {
   max-width: 1200px;
   width: 100%;
   height: inherit;
@@ -14,14 +14,14 @@
   margin: 0 auto;
 }
 
-.navigation__inner {
+.inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: inherit;
 }
 
-.navigation__root {
+.root {
   display: flex;
   align-items: center;
 
@@ -29,7 +29,7 @@
     display: flex;
   }
   
-  .navigation__root--logo {
+  .root__logo {
     img {
       width: auto;
       height: 20px;
@@ -37,15 +37,15 @@
   }
 }
 
-.navigation__nav {
+.nav {
   position: relative;
 }
 
-.navigation__links {
+.nav__links {
   display: flex;
   align-items: center;
 
-  .navigation__link {
+  .nav__link {
     position: relative;
     margin-left: 36px;
     font-size: $font-xs;
@@ -65,7 +65,7 @@
   }
 }
 
-.navigation__link--bar {
+.nav__bar {
   position: absolute;
   bottom: -8px;
   width: 12px;
@@ -77,8 +77,8 @@
   opacity: 0;
 }
 
-.navigation__menu {
-  &--btn {
+.menu {
+  &__btn {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 
@@ -96,7 +96,7 @@
     }
   }
 
-  &--nav {
+  &__nav {
     position: fixed;
     top: 160px;
     left: 0;
@@ -108,7 +108,7 @@
     will-change: transform;
   }
 
-  &--overlay {
+  &__overlay {
     position: absolute;
     top: 160px;
     left: 0;
@@ -121,11 +121,11 @@
     will-change: opacity;
   }
 
-  &--inner {
+  &__inner {
     padding: 24px;
   }
 
-  &--links {
+  &__links {
     padding: 0 16px;
 
     a {
@@ -133,7 +133,7 @@
     }
   }
 
-  &--link {
+  &__link {
     opacity: 0;
     margin-top: 24px;
     font-size: $font-sm;
@@ -168,32 +168,32 @@
   }
 
   &.is-open {
-    .navigation__menu--nav {
+    .menu__nav {
       transform: translateX(0);
     }
-    .navigation__menu--overlay {
+    .menu__overlay {
       opacity: 1;
     }
-    .navigation__menu--link {
+    .menu__link {
       opacity: 1;
     }
   }
 }
 
 @include media('<phone') {
-  .navigation__nav {
+  .nav {
     display: none;
   }
-  .navigation__menu {
+  .menu {
     display: block;
   }
 }
 
 @include media('>=phone') {
-  .navigation__nav {
+  .nav {
     display: block;
   }
-  .navigation__menu {
+  .menu {
     display: none;
   }
 }

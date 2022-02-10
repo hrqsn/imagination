@@ -1,6 +1,5 @@
 import Link from 'next/link'
-import { useContext, useEffect } from 'react'
-import { ScrollContext } from '@/components/scroller'
+import { useEffect } from 'react'
 import { Arrow } from '@/components/icons'
 import gsap from 'gsap'
 import dayjs from 'dayjs'
@@ -11,15 +10,10 @@ gsap.registerPlugin(ScrollTrigger)
 import s from './style.module.scss'
 
 export default function News ({ posts }) {
-  const { ready } = useContext(ScrollContext)
-
   useEffect(() => {
-    if (!ready) return
-
     gsap.timeline({
       scrollTrigger: {
         trigger: `.${s.container}`,
-        scroller: '[data-scroll-container]',
         start: 'top center',
         end: 'bottom top'
       }
@@ -50,7 +44,7 @@ export default function News ({ posts }) {
       duration: 2,
       delay: 0.4
     }, '<')
-  }, [ready])
+  }, [])
 
   return (
     <section className={s.container}>
