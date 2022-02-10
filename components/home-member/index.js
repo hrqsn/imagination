@@ -54,7 +54,7 @@ export default function Member () {
           <div className={s.members}>
             {casts.map(cast => (
               <div className={s.member} key={cast.id}>
-                <Image src={`/img/casts/${cast.id}.webp`} alt={cast.name} className={s.member__avatar} width={96} height={96} />
+                <Image src={`/img/casts/${cast.id}.webp`} alt={cast.name} className={s.member__avatar} width={96} height={96} placeholder='/img/noimage.png' />
                 <h1 className={s.member__name}>{cast.name}</h1>
                 <p className={s.member__role}>{cast.role}</p>
               </div>
