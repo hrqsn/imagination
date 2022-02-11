@@ -1,3 +1,4 @@
+import dynamic from 'next/dynamic'
 import PageHeader from '@/components/page-header'
 import SectionWrapper from '@/components/section-wrapper'
 import PostList from '@/components/post-list'

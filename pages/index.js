@@ -1,34 +1,35 @@
 import { useEffect } from 'react'
+import dynamic from 'next/dynamic'
 import Hero from '@/components/home-hero'
-import About from '@/components/home-about'
-import Member from '@/components/home-member'
-import News from '@/components/home-news'
+const About = dynamic(() => import('@/components/home-about'))
+const Member = dynamic(() => import('@/components/home-member'))
+const News = dynamic(() => import('@/components/home-news'))
 import { getAllPosts } from '@/lib/api'
 
 export default function Home ({ posts }) {
   useEffect(() => {
-    const lazyVideos = [].slice.call(document.querySelectorAll('video.lazyload'))
+    const lazyAssets = [].slice.call(document.querySelectorAll('.lazyload'))
 
     if ('IntersectionObserver' in window) {
-      const lazyVideoObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach((video) => {
-          if (video.isIntersecting) {
-            for (let source in video.target.children) {
-              const videoSource = video.target.children[source]
-              if (typeof videoSource.tagName === 'string' && videoSource.tagName === 'SOURCE') {
-                videoSource.src = videoSource.dataset.src
+      const lazyAssetsObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((asset) => {
+          if (asset.isIntersecting) {
+            for (let source in asset.target.children) {
+              const assetSource = asset.target.children[source]
+              if (typeof assetSource.tagName === 'string' && assetSource.tagName === 'SOURCE') {
+                assetSource.src = assetSource.dataset.src
               }
             }
   
-            video.target.load()
-            video.target.classList.remove('lazyload')
-            lazyVideoObserver.unobserve(video.target)
+            asset.target.load()
+            asset.target.classList.remove('lazyload')
+            lazyAssetsObserver.unobserve(asset.target)
           }
         });
       });
   
-      lazyVideos.forEach((lazyVideo) => {
-        lazyVideoObserver.observe(lazyVideo)
+      lazyAssets.forEach((lazyAsset) => {
+        lazyAssetsObserver.observe(lazyAsset)
       })
     }
   } ,[])

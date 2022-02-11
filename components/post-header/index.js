@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import dayjs from 'dayjs'
 
 import s from './style.module.scss'
@@ -12,7 +13,9 @@ export default function PostHeader ({ title, coverImage, date }) {
       <h1 className={s.title}>{title}</h1>
       <p className={s.date}>{dayjs(date).format('YYYY.MM.DD')}</p>
       {coverImage && (
-        <img className={s.image} src={coverImage} alt={title} />
+        <div className={s.image} >
+          <Image src={coverImage} alt={title} layout='fill' />
+        </div>
       )}
     </div>
   )
