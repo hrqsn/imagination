@@ -14,11 +14,11 @@ Imagination Serverに関するサービスに参加、体験をした場合、�
 この規約は、事前に予告なくImagination Serverにより変更されます。
 また、以下に示す団体・企業により変更の要請が行われた場合、それに従い、事前に予告なくImagination Serverにより変更されます。
 
-・The Walt Disney Company
-・The Walt Disney Imagineering
-・Walt Disney Creative Entertainment
-・Walt Disney Attractions
-・株式会社オリエンタルランド
+- The Walt Disney Company
+- The Walt Disney Imagineering
+- Walt Disney Creative Entertainment
+- Walt Disney Attractions
+- 株式会社オリエンタルランド
 
 #### ３．プラットフォームについて
 Imagination ServerはMojang Studiosのゲームである「Minecraft (Bedrock Edition）」において展開している仮想テーマパークプロジェクト及びサービスです。
@@ -30,8 +30,8 @@ Imagination Serverが展開するプログラム、サービスの利用に伴�
 
 #### ５．サービスの体験における禁止事項と違反者への対処方法について
 実際のパークで禁止されている行為（荒らす/禁止区域への立ち入り/迷惑行為等）はご遠慮ください。
-・未完成の建造物にはバリアブロックが設置されています。不用意に中に入る等はご遠慮ください。
-・万が一違反行為とみなした場合は、以降のご来園をお断りさせていただく場合がありますのでご了承ください。
+- 未完成の建造物にはバリアブロックが設置されています。不用意に中に入る等はご遠慮ください。
+- 万が一違反行為とみなした場合は、以降のご来園をお断りさせていただく場合がありますのでご了承ください。
 
 #### ６．プラットフォームでの利用規約について
 「Minecraft (Bedrock Edition）」の利用規約についてはMojang Studiosの「MINECRAFT 利用規約および エンド ユーザー使用許諾契約書」を確認してください。
@@ -59,13 +59,13 @@ Imagination Serverのサービスシステムの権利は「Minecraft (Bedrock E
 「Minecraft（Bedrock Edition）」の既存テクスチャ及びキャラクターがデザインされたテクスチャを除き、著作権はImagination Serverが所有します。
 キャラクターがデザインされたテクスチャは＜本項（１）＞に基づき提供しており、以下の企業より要請が行われた場合、それに従い対処します。
 
-・The Walt Disney Company
+- The Walt Disney Company
 
 ##### （５）キャラクター及び商標について
 Imagination Serverが提供する物のなかで、オリジナルのキャラクターや商標(Imagination Server等の名前、ロゴなど)はImagination Serverが所有しますが、オリジナルではないキャラクター及び商標を使用している場合もあり、その場合は＜本項（１）＞に基づき提供しており、以下の団体及び企業より要請が行われた場合、それに従い対処します。
 
-・The Walt Disney Company
-・株式会社オリエンタルランド
+- The Walt Disney Company
+- 株式会社オリエンタルランド
 
 ##### （６）音楽について
 Imagination Serverで利用する音楽パックの音楽については、＜本項（１）＞に基づき提供しており、音楽に関してImagination Serverによる依頼で製作されたものも含め、全ての権利は所有せず、著作者の要請があった場合、それに従い対処します。
@@ -79,11 +79,11 @@ Mojang Studiosの利用規約に基づき、権利は一切所有しません。
 そのため、同様の解釈によるMinecraft上での再現に対しては権利を所有しませんが、“Imagination Serverの再現”と公言しているもの及び明らかな“Imagination Serverの模倣行為”と考えられるものに対しては権利を所有します。
 また、以下の企業より要請が行われた場合、それに従い対処します。
 
-・The Walt Disney Company
-・The Walt Disney Imagineering
-・Walt Disney Creative Entertainment
-・Walt Disney Attractions
-・株式会社オリエンタルランド
+- The Walt Disney Company
+- The Walt Disney Imagineering
+- Walt Disney Creative Entertainment
+- Walt Disney Attractions
+- 株式会社オリエンタルランド
 
 ##### （９）ワールドデータについて
 Imagination Serverのワールドデータは外部への頒布を一切行う予定はありません。そのため、ワールドデータを取り、外部に頒布するなどの行為は一切認めません。
