@@ -47,9 +47,24 @@
 }
 
 .prose h1,
-.prose h2 {
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
   font-weight: 600;
+}
+
+.prose h1,
+.prose h2 {
+  margin-top: 64px;
+}
+.prose h4 {
   margin-top: 48px;
+}
+
+.prose h5 {
+  margin-top: 24px;
 }
 
 .prose h1 {
@@ -58,6 +73,14 @@
 
 .prose h2 {
   font-size: $font-md;
+}
+
+.prose ul {
+  margin-top: 24px;
+}
+
+.prose li {
+  list-style: inside;
 }
 
 .prose table {

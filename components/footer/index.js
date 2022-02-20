@@ -20,11 +20,14 @@ export default function Footer () {
           <Link href='/news'>
             <a className={s.link}>ニュース</a>
           </Link>
-          <Link href='/blog'>
+          {/* <Link href='/blog'>
             <a className={s.link}>ブログ</a>
-          </Link>
+          </Link> */}
           <Link href='/contact'>
             <a className={s.link}>お問い合わせ</a>
+          </Link>
+          <Link href='/terms'>
+            <a className={s.link}>利用規約</a>
           </Link>
         </nav>
         <div className={s.social}>

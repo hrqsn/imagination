@@ -151,11 +151,20 @@ main {
   }
 }
 
-
 .split-lines-outer {
   overflow-y: hidden;
 }
 
 .split-lines-inner {
   display: inline-block;
+}
+
+.parallax {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.underline {
+  text-decoration: underline;
 }

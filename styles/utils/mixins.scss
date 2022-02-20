@@ -22,7 +22,7 @@
   &:after {
     content: '';
     display: inline-block;
-    padding-top: $width / $height * 100%;
+    padding-top: calc($width / $height * 100%);
     width: 100%;
   }
 }

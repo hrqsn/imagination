@@ -25,7 +25,7 @@
     position: relative;
     width: inherit;
     height: inherit;
-    background-color: black;
+    background-color: $c-text;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,6 +44,19 @@
       height: 100%;
       background-color: rgba(0,0,0,.3);
       border-radius: 8px;
+    }
+  }
+
+  .inner__base {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      color: $c-text;
     }
   }
 

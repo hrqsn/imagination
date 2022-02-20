@@ -28,9 +28,9 @@ export default function About () {
             <Status />
           </div>
         </section>
-        <section className='section'>
+        {/* <section className='section'>
           <h4>資料提供</h4>
-        </section>
+        </section> */}
       </SectionWrapper>
     </>
   )

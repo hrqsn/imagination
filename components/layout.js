@@ -1,4 +1,5 @@
 import Seo from './seo'
+import ParallaxWrapper from './parallax-wrapper'
 import Header from './header'
 import Footer from './footer'
 
@@ -6,9 +7,11 @@ export default function Layout ({ children }) {
   return (
     <>
       <Seo />
-      <Header />
-      {children}
-      <Footer />
+      <ParallaxWrapper>
+        <Header />
+        {children}
+        <Footer />
+      </ParallaxWrapper>
     </>
   )
 }

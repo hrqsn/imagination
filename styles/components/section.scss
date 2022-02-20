@@ -10,6 +10,11 @@
     font-weight: 600;
   }
 
+  &__header {
+    font-size: $font-base;
+    font-weight: 600;
+  }
+
   .section__body {
     font-size: $font-sm;
     margin-top: 24px;
@@ -23,5 +28,19 @@
         }
       }
     }
+
+    li:not(:first-child) {
+      margin-top: 16px;
+    }
+
+    a.underline {
+      text-decoration: underline;
+    }
+  }
+
+  .section__description {
+    font-size: $font-sm;
+    margin-top: 24px;
+    color: $c-gray-4;
   }
 }

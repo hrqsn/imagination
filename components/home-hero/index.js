@@ -1,7 +1,9 @@
 import { useEffect } from 'react'
-import Parallax from '@/components/parallax'
 import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import cn from 'classnames'
+
+gsap.registerPlugin(ScrollTrigger)
 
 import s from './style.module.scss'
 
@@ -22,11 +24,10 @@ export default function Hero () {
       ease: 'expo.out',
       duration: 2,
       delay: 0.6
-    }, '<').to(`.${s.video__wrapper}`, {
-      clipPath: 'inset(0% 0 0 0)',
+    }, '<').to(`.${s.video}`, {
+      opacity: 1,
       duration: 2,
-      ease: 'expo.out',
-      delay: 0.2
+      delay: 0.4
     }, '<')
   }, [])
 
@@ -57,12 +58,10 @@ export default function Hero () {
       </div>
       <div className={s.video}>
         <div className={s.video__wrapper}>
-          <Parallax speed={-1}>
-            <video className={cn(s.video__content, 'lazyload')} poster='/img/bg.webp' playsInline autoPlay loop muted>
-              <source data-src='/img/bg.webm' type='video/webm' />
-              <source data-src='/img/bg.mp4' type='video/mp4' />
-            </video>
-          </Parallax>
+          <video className={cn(s.video__content, 'lazyload')} poster='/img/bg.webp' playsInline autoPlay loop muted>
+            <source data-src='/img/bg.webm' type='video/webm' />
+            <source data-src='/img/bg.mp4' type='video/mp4' />
+          </video>
         </div>
       </div>
     </div>

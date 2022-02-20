@@ -158,9 +158,9 @@ export default function Header () {
                 <Link href='/news'>
                   <a className={cn(s.nav__link, active('/news') && s.active)}>ニュース</a>
                 </Link>
-                <Link href='/blog'>
+                {/* <Link href='/blog'>
                   <a className={cn(s.nav__link, active('/blog') && s.active)}>ブログ</a>
-                </Link>
+                </Link> */}
                 <Link href='/contact'>
                   <a className={cn(s.nav__link, active('/contact') && s.active)}>お問い合わせ</a>
                 </Link>
@@ -196,14 +196,19 @@ export default function Header () {
                         <span>ニュース</span>
                       </a>
                     </Link>
-                    <Link href='/blog'>
+                    {/* <Link href='/blog'>
                       <a className={cn(s.menu__link, active('/blog') && s.active)} onClick={toggleMenu}>
                         <span>ブログ</span>
                       </a>
-                    </Link>
+                    </Link> */}
                     <Link href='/contact'>
                       <a className={cn(s.menu__link, active('/contact') && s.active)} onClick={toggleMenu}>
                         <span>お問い合わせ</span>
+                      </a>
+                    </Link>
+                    <Link href='/terms'>
+                      <a className={cn(s.menu__link, active('/terms') && s.active)} onClick={toggleMenu}>
+                        <span>利用規約</span>
                       </a>
                     </Link>
                   </nav>
