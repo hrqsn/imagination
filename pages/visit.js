@@ -13,7 +13,7 @@ export default function Visit () {
       <SectionWrapper>
         <section className='section'>
           <h2 className='section__header'>観光企画「​​​​​​​​Imagination Server 5th Anniversary ~Spring time !!!~」を開催！</h2>
-          <p className='section__body'>この度、Imagination Server 5周年フィナーレを飾る参加型イベント「Imagination Server 5th Anniversary ~Spring time !!!~」を開催いたします！</p>
+          <p className='section__body'>この度、Imagination Server 5周年フィナーレを飾る観光企画「Imagination Server 5th Anniversary ~Spring time !!!~」を開催いたします！</p>
         </section>
         <section className='section'>
           <h4>観光企画とは</h4>
