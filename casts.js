@@ -27,5 +27,4 @@ export default
   { id: 25, name: 'まさ', tag: 'stormMASA' },
   { id: 26, name: '水素', tag: 'suison7380' },
   { id: 27, name: 'もや', tag: 'moyamoya1028' },
-  { id: 28, name: 'まっさー', tag: 'massa snake7827' },
-  { id: 29, name: 'みずッチ', tag: 'MizuTchiUCR'} ]
+  { id: 28, name: 'みずッチ', tag: 'MizuTchiUCR'} ]
