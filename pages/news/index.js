@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import PageHeader from '@/components/page-header'
 import SectionWrapper from '@/components/section-wrapper'
 import PostList from '@/components/post-list'
@@ -8,6 +9,10 @@ export default function News ({
 }) {
   return (
     <>
+      <Head>
+        <title>ニュース - Imagination Server</title>
+      </Head>
+      
       <PageHeader
         title='ニュース'
         image='/img/news.webp'

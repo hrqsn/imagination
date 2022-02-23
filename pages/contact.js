@@ -1,9 +1,14 @@
+import Head from 'next/head'
 import PageHeader from '@/components/page-header'
 import SectionWrapper from '@/components/section-wrapper'
 
 export default function Contact () {
   return (
     <>
+      <Head>
+        <title>お問い合わせ - Imagination Server</title>
+      </Head>
+      
       <PageHeader
         title='お問い合わせ'
         image='/img/contact.webp'

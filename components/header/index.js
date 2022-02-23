@@ -149,11 +149,11 @@ export default function Header () {
                 <Link href='/'>
                   <a className={cn(s.nav__link, active('/') && s.active)}>ホーム</a>
                 </Link>
-                <Link href='/about'>
-                  <a className={cn(s.nav__link, active('/about') && s.active)}>活動について</a>
-                </Link>
                 <Link href='/visit'>
                   <a className={cn(s.nav__link, active('/visit') && s.active)}>観光企画</a>
+                </Link>
+                <Link href='/attractions'>
+                  <a className={cn(s.nav__link, active('/attractions') && s.active)}>施設・グッズ</a>
                 </Link>
                 <Link href='/news'>
                   <a className={cn(s.nav__link, active('/news') && s.active)}>ニュース</a>
@@ -181,14 +181,14 @@ export default function Header () {
                         <span>ホーム</span>
                       </a>
                     </Link>
-                    <Link href='/about'>
-                      <a className={cn(s.menu__link, active('/about') && s.active)} onClick={toggleMenu}>
-                        <span>活動について</span>
-                      </a>
-                    </Link>
                     <Link href='/visit'>
                       <a className={cn(s.menu__link, active('/visit') && s.active)} onClick={toggleMenu}>
                         <span>観光企画</span>
+                      </a>
+                    </Link>
+                    <Link href='/attractions'>
+                      <a className={cn(s.menu__link, active('/about') && s.active)} onClick={toggleMenu}>
+                        <span>施設・グッズ</span>
                       </a>
                     </Link>
                     <Link href='/news'>

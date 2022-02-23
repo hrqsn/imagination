@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { useEffect } from 'react'
 import dynamic from 'next/dynamic'
 import Hero from '@/components/home-hero'
@@ -36,6 +37,10 @@ export default function Home ({ posts }) {
 
   return (
     <>
+      <Head>
+        <title>トップ - Imagination Server</title>
+      </Head>
+
       <Hero />
       <About />
       <Member />

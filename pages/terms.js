@@ -1,9 +1,14 @@
+import Head from 'next/head'
 import PageHeader from '@/components/page-header'
 import SectionWrapper from '@/components/section-wrapper'
 
 export default function Terms () {
   return (
     <>
+      <Head>
+        <title>利用規約 - Imagination Server</title>
+      </Head>
+      
       <PageHeader
         title='利用規約'
       />

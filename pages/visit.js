@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import PageHeader from '@/components/page-header'
 import SectionWrapper from '@/components/section-wrapper'
 import dayjs from 'dayjs'
@@ -5,6 +6,10 @@ import dayjs from 'dayjs'
 export default function Visit () {
   return (
     <>
+      <Head>
+        <title>観光企画 - Imagination Server</title>
+      </Head>
+      
       <PageHeader
         title='観光企画'
         image='/img/visit.webp'
@@ -28,16 +33,16 @@ export default function Visit () {
         <section className='section'>
           <h4>必要なもの</h4>
           <ul className='section__body'>
-            <li>1. <span>Minecraft統合版(Windows10, スマホ, タブレット版)</span></li>
+            <li>1. <span>Minecraft統合版 (Windows10, スマホ, タブレット版)</span></li>
             <li>2. <span>インターネット環境</span></li>
-            <li>3. <span>Discordアプリ(<a className='underline' href='https://discord.com/' target='_blank' rel='noopener'>ダウンロードリンク</a>)</span></li>
+            <li>3. <span>Discordアプリ (<a className='underline' href='https://discord.com/' target='_blank' rel='noopener'>ダウンロードリンク</a>)</span></li>
           </ul>
           <p className='section__description'>Minecraft Java, Switch, PS4版はサーバーへの接続ができません。予めご了承下さい。</p>
         </section>
         <section className='section'>
           <h4>参加方法</h4>
           <ul className='section__body'>
-            <li>1. <a className='underline' href='https://forms.gle/kR7D73RuozPznTAY6' target='_blank' rel='noopener'>参加申請フォーム</a> から必要事項をご記入の上、回答を送信してください。送信後、Discordサーバーへの参加方法が表示されますので、案内に沿って必ずご参加ください。</li>
+            <li>1. <a className='underline' href='https://forms.gle/yYovXtGfHDrxtk57A' target='_blank' rel='noopener'>参加申請フォーム</a> から必要事項をご記入の上、回答を送信してください。送信後、Discordサーバーへの参加方法が表示されますので、案内に沿って必ずご参加ください。</li>
             <li>2. Discordサーバーに参加すると、詳細な参加方法や注意事項をご確認いただけます。ゲストの皆様やキャストとの交流を楽しみながら、開園をお待ちください！</li>
           </ul>
         </section>
