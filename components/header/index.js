@@ -187,7 +187,7 @@ export default function Header () {
                       </a>
                     </Link>
                     <Link href='/attractions'>
-                      <a className={cn(s.menu__link, active('/about') && s.active)} onClick={toggleMenu}>
+                      <a className={cn(s.menu__link, active('/attractions') && s.active)} onClick={toggleMenu}>
                         <span>施設・グッズ</span>
                       </a>
                     </Link>
