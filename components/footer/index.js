@@ -11,11 +11,11 @@ export default function Footer () {
           <Link href='/'>
             <a className={s.link}>ホーム</a>
           </Link>
-          <Link href='/about'>
-            <a className={s.link}>活動について</a>
-          </Link>
           <Link href='/visit'>
             <a className={s.link}>観光企画</a>
+          </Link>
+          <Link href='/attractions'>
+            <a className={s.link}>施設・グッズ</a>
           </Link>
           <Link href='/news'>
             <a className={s.link}>ニュース</a>
