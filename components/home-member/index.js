@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { useEffect } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
-import casts from '@/casts.json'
+import casts from '@/casts'
 
 gsap.registerPlugin(ScrollTrigger)
 
