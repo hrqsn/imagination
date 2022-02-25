@@ -63,7 +63,7 @@ export default function About () {
           </h1>
           <div className={s.header__body}>
             <p>
-              Imagination Serverは、東京ディズニーリゾートを愛する29名のメンバーが、<br />Minecraft: Bedrock Editionを用いて完全再現するプロジェクトです。
+              Imagination Serverは、東京ディズニーリゾートを愛する{casts.length}名のメンバーが、<br />Minecraft: Bedrock Editionを用いて完全再現するプロジェクトです。
             </p>
             <p>
               2016年8月に発足したこのプロジェクトは、有志の学生, 社会人によって非営利で運営されています。

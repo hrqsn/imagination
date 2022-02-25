@@ -30,7 +30,7 @@ export default function Terms () {
           </ul>
           <h4>3. プラットフォームについて</h4>
           <p>Imagination ServerはMojang Studiosのゲームである「Minecraft (Bedrock Edition）」において展開している仮想テーマパークプロジェクト及びサービスです。</p>
-          <h4>4.情報収集について</h4>
+          <h4>4. 情報収集について</h4>
           <p>Imagination Serverが展開するプログラム、サービスの利用に伴って、Imagination Serverが収集できる全ての情報を取得し、記録、保管します。これらは、プログラム及びサービスの運営品質向上のために利用します。また、Imagination Server の利用するプラットフォームにより、収集が行われている場合があります。</p>
           <h4>5. サービスの体験における禁止事項と違反者への対処方法について</h4>
           <p>実際のパークで禁止されている行為（荒らす/禁止区域への立ち入り/迷惑行為等）はご遠慮ください。</p>
@@ -85,6 +85,7 @@ export default function Terms () {
           <p>Imagination Serverが展開するプログラム及びサービスは事前の予告なく、Imagination Serverの判断で停止、終了することができます。また、停止、終了に関して、Imagination Serverは告知、表記、周知する義務は負いません。</p>
           <h4>11. プログラム及びサービスによって生じた事項の解決方法について</h4>
           <p>利用者に対して生じた事項に関する責任は、Imagination Serverは一切負いません。権利者に対して生じた事項に関する責任は、要請を受け、それに従い対処した上で、双方の合意を持って解決します。</p>
+          <br />
           <p>2020/07/13発行</p>
         </section>
       </SectionWrapper>
