@@ -15,7 +15,7 @@ export default function Footer () {
             <a className={s.link}>観光企画</a>
           </Link>
           <Link href='/attractions'>
-            <a className={s.link}>施設・グッズ</a>
+            <a className={s.link}>パークの楽しみ方</a>
           </Link>
           <Link href='/news'>
             <a className={s.link}>ニュース</a>

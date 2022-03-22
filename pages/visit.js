@@ -17,6 +17,14 @@ export default function Visit () {
 
       <SectionWrapper>
         <section className='section'>
+          <h4>観光企画とは</h4>
+          <p className='section__body'>観光企画は、忠実に再現されたバーチャルパークを体験いただけるイベントです。徒歩による観光のほか、アトラクションやショーなどをゲストの方々と一緒にお楽しみいただけます。</p>
+        </section>
+        <section className='section'>
+          <h4>運営情報</h4>
+          <p className='section__body'>[{dayjs().format('MM/DD')}] 次回の開園に向けて準備を進めています。</p>
+        </section>
+        {/* <section className='section'>
           <h2 className='section__header'>観光企画「​​​​​​​​Imagination Server 5th Anniversary ~Spring time !!!~」を開催！</h2>
           <p className='section__body'>この度、Imagination Server 5周年フィナーレを飾る観光企画「Imagination Server 5th Anniversary ~Spring time !!!~」を開催いたします！</p>
         </section>
@@ -48,10 +56,6 @@ export default function Visit () {
         </section>
         <section className='section'>
           <p className='section__body'>それでは、皆様にお会いできることをキャスト一同心よりお待ちしております ✨</p>
-        </section>
-        {/* <section className='section'>
-          <h4>運営情報</h4>
-          <p className='section__body'>[{dayjs().format('MM/DD')}] 次回の開園に向けて準備を進めています。</p>
         </section> */}
       </SectionWrapper>
     </>

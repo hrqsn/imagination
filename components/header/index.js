@@ -153,7 +153,7 @@ export default function Header () {
                   <a className={cn(s.nav__link, active('/visit') && s.active)}>観光企画</a>
                 </Link>
                 <Link href='/attractions'>
-                  <a className={cn(s.nav__link, active('/attractions') && s.active)}>施設・グッズ</a>
+                  <a className={cn(s.nav__link, active('/attractions') && s.active)}>パークの楽しみ方</a>
                 </Link>
                 <Link href='/news'>
                   <a className={cn(s.nav__link, active('/news') && s.active)}>ニュース</a>
@@ -188,7 +188,7 @@ export default function Header () {
                     </Link>
                     <Link href='/attractions'>
                       <a className={cn(s.menu__link, active('/attractions') && s.active)} onClick={toggleMenu}>
-                        <span>施設・グッズ</span>
+                        <span>パークの楽しみ方</span>
                       </a>
                     </Link>
                     <Link href='/news'>
