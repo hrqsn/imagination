@@ -53,8 +53,6 @@ export default function Terms () {
           <p>サービスの利用者の既存のキャラクターと明らかにわかるスキンの利用を、Mojang Studiosの利用規約に基づき、Imagination Serverは一切認めません。</p>
           <h5>(4) テクスチャパックについて</h5>
           <p>「Minecraft（Bedrock Edition）」の既存テクスチャ及びキャラクターがデザインされたテクスチャを除き、著作権はImagination Serverが所有します。キャラクターがデザインされたテクスチャは&lt;本項(1)&gt;に基づき提供しており、以下の企業より要請が行われた場合、それに従い対処します。</p>
-          <h5>(4) テクスチャパックについて</h5>
-          <p>「Minecraft（Bedrock Edition）」の既存テクスチャ及びキャラクターがデザインされたテクスチャを除き、著作権はImagination Serverが所有します。キャラクターがデザインされたテクスチャは&lt;本項(1)&gt;に基づき提供しており、以下の企業より要請が行われた場合、それに従い対処します。</p>
           <ul>
             <li>The Walt Disney Company</li>
           </ul>
