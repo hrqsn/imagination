@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import PageHeader from '@/components/page-header'
 import SectionWrapper from '@/components/section-wrapper'
+import Button from '@/components/button'
 
 export default function Contact () {
   return (
@@ -17,7 +18,9 @@ export default function Contact () {
       <SectionWrapper>
         <section className='section section-contact'>
           <p className='section__body'>質問やご連絡等は「カスタマーサポート」TwitterアカウントのDMまでお願いいたします。</p>
-          <a href='https://twitter.com/imasaba_support/' target='_blank' rel='noopener noreferrer'>問い合わせる →</a>
+          <div className='section__center'>
+            <Button title='問い合わせる' href='https://twitter.com/imasaba_support/' target='_blank' />
+          </div>
         </section>
       </SectionWrapper>
     </>
