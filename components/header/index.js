@@ -128,7 +128,8 @@ export default function Header () {
   }, [open])
 
   function active (pathname) {
-    if (router.pathname === pathname) return true
+    const basepath = router.pathname.split('/')[1]
+    if (basepath === pathname.split('/')[1]) return true
     return false
   }
 
@@ -152,15 +153,12 @@ export default function Header () {
                 <Link href='/visit'>
                   <a className={cn(s.nav__link, active('/visit') && s.active)}>観光企画</a>
                 </Link>
-                <Link href='/attractions'>
-                  <a className={cn(s.nav__link, active('/attractions') && s.active)}>パークの楽しみ方</a>
+                <Link href='/guide'>
+                  <a className={cn(s.nav__link, active('/guide') && s.active)}>パークの楽しみ方</a>
                 </Link>
                 <Link href='/news'>
                   <a className={cn(s.nav__link, active('/news') && s.active)}>ニュース</a>
                 </Link>
-                {/* <Link href='/blog'>
-                  <a className={cn(s.nav__link, active('/blog') && s.active)}>ブログ</a>
-                </Link> */}
                 <Link href='/contact'>
                   <a className={cn(s.nav__link, active('/contact') && s.active)}>お問い合わせ</a>
                 </Link>
@@ -186,8 +184,8 @@ export default function Header () {
                         <span>観光企画</span>
                       </a>
                     </Link>
-                    <Link href='/attractions'>
-                      <a className={cn(s.menu__link, active('/attractions') && s.active)} onClick={toggleMenu}>
+                    <Link href='/guide'>
+                      <a className={cn(s.menu__link, active('/guide') && s.active)} onClick={toggleMenu}>
                         <span>パークの楽しみ方</span>
                       </a>
                     </Link>
@@ -196,11 +194,6 @@ export default function Header () {
                         <span>ニュース</span>
                       </a>
                     </Link>
-                    {/* <Link href='/blog'>
-                      <a className={cn(s.menu__link, active('/blog') && s.active)} onClick={toggleMenu}>
-                        <span>ブログ</span>
-                      </a>
-                    </Link> */}
                     <Link href='/contact'>
                       <a className={cn(s.menu__link, active('/contact') && s.active)} onClick={toggleMenu}>
                         <span>お問い合わせ</span>

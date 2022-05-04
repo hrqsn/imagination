@@ -1,10 +1,10 @@
 @import '@/styles/utils/utils';
 
 .container {
-  max-width: 1200px;
+  // max-width: 1200px;
   width: 100%;
-  height: 400px;
-  padding: 0 24px;
+  height: 480px;
+  // padding: 0 24px;
   margin: 24px auto 0;
 
   @include media('<phone') {
@@ -31,7 +31,7 @@
     align-items: center;
     background-position: center;
     background-size: cover;
-    border-radius: 8px;
+    // border-radius: 8px;
     overflow: hidden;
 
     &::before {
@@ -42,8 +42,12 @@
       right: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0,0,0,.3);
-      border-radius: 8px;
+      // background-color: rgba(0,0,0,.3);
+      // border-radius: 8px;
+      background-color: rgba(0, 0, 0, .4);
+      background-image: radial-gradient(#000 20%, transparent 0), radial-gradient(#000 20%, transparent 0);
+      background-position: 0 0, 10px 10px;
+      background-size: 4px 4px;
     }
   }
 

@@ -1,0 +1,76 @@
+@import '@/styles/utils/utils';
+
+.container {
+  position: relative;
+  height: 54px;
+  background-color: $c-primary;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  height: inherit;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+}
+
+.nav {
+  position: relative;
+  height: 100%;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  color: $c-white;
+  height: inherit;
+
+  .link {
+    position: relative;
+    margin-left: 36px;
+    font-size: $font-xs;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    height: inherit;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:hover {
+      font-weight: 700;
+    }
+
+    &.active {
+      font-weight: 800;
+      border-bottom: 2px solid $c-white;
+      padding-top: 2px;
+    }
+  }
+}
+
+@include media('<phone') {
+  .nav {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+}
+
+@include media('>=phone') {
+  .nav {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+}

@@ -14,15 +14,12 @@ export default function Footer () {
           <Link href='/visit'>
             <a className={s.link}>観光企画</a>
           </Link>
-          <Link href='/attractions'>
+          <Link href='/guide'>
             <a className={s.link}>パークの楽しみ方</a>
           </Link>
           <Link href='/news'>
             <a className={s.link}>ニュース</a>
           </Link>
-          {/* <Link href='/blog'>
-            <a className={s.link}>ブログ</a>
-          </Link> */}
           <Link href='/contact'>
             <a className={s.link}>お問い合わせ</a>
           </Link>

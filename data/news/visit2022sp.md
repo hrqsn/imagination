@@ -9,4 +9,4 @@ ogImage:
 
 この度、Imagination Server 5周年フィナーレを飾る観光企画「Imagination Server 5th Anniversary ~Spring time !!!~」を開催いたします！
 
-[詳細はこちら](/visit)
+→ イベントは終了しました。次回のご参加を心よりお待ちしております。
