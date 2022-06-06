@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import dynamic from 'next/dynamic'
 import Hero from '@/components/home-hero'
 const About = dynamic(() => import('@/components/home-about'))
+const Kanko = dynamic(() => import('@/components/home-kanko'))
 const Member = dynamic(() => import('@/components/home-member'))
 const News = dynamic(() => import('@/components/home-news'))
 import { getAllPosts } from '@/lib/api'
@@ -26,8 +27,8 @@ export default function Home ({ posts }) {
             asset.target.classList.remove('lazyload')
             lazyAssetsObserver.unobserve(asset.target)
           }
-        });
-      });
+        })
+      })
   
       lazyAssets.forEach((lazyAsset) => {
         lazyAssetsObserver.observe(lazyAsset)
@@ -43,6 +44,7 @@ export default function Home ({ posts }) {
 
       <Hero />
       <About />
+      <Kanko />
       <Member />
       <News posts={posts} />
     </>

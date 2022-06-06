@@ -1,24 +1,11 @@
 @import '@/styles/utils/utils';
 
 .container {
-  // max-width: 1200px;
   width: 100%;
-  height: 480px;
-  // padding: 0 24px;
-  margin: 24px auto 0;
+  height: 540px;
 
   @include media('<phone') {
-    padding: 0;
     height: 200px;
-    margin-top: 0;
-
-    .inner {
-      border-radius: 0 !important;
-
-      &::before {
-        border-radius: 0 !important;
-      }
-    }
   }
 
   .inner {
@@ -31,33 +18,24 @@
     align-items: center;
     background-position: center;
     background-size: cover;
-    // border-radius: 8px;
-    overflow: hidden;
 
     &::before {
-      content: '';
-      display: block;
       position: absolute;
+      content: "";
       top: 0;
+      left: 0;
       right: 0;
-      width: 100%;
-      height: 100%;
-      // background-color: rgba(0,0,0,.3);
-      // border-radius: 8px;
-      background-color: rgba(0, 0, 0, .4);
-      background-image: radial-gradient(#000 20%, transparent 0), radial-gradient(#000 20%, transparent 0);
-      background-position: 0 0, 10px 10px;
-      background-size: 4px 4px;
+      bottom: 0;
+      background: rgba($color: #000000, $alpha: 0.4);
     }
   }
 
-  .inner__base {
-    position: relative;
-    width: inherit;
-    height: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .noimage {
+    background-color: $c-bg;
+    
+    &::before {
+      background: $c-bg;
+    }
 
     .title {
       color: $c-text;
@@ -66,8 +44,12 @@
 
   .title {
     position: relative;
-    font-size: $font-md;
+    font-size: $font-lg;
     font-weight: 600;
     color: $c-white;
+
+    @include media('<phone') {
+      font-size: $font-md;
+    }
   }
 }

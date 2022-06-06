@@ -24,6 +24,5 @@
     "sass": "^1.48.0",
     "sharp": "^0.29.3",
     "yarn": "^1.22.17"
-  },
-  "browserslist": [">0.3%", "not ie 11", "not dead", "not op_mini all"]
+  }
 }

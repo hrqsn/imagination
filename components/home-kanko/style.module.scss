@@ -1,0 +1,81 @@
+@import '@/styles/utils/utils';
+
+.container {
+  width: 100%;
+  margin: 120px auto;
+  background-color: #1a51af;
+  color: $c-white;
+
+  @include media('<phone') {
+    margin: 80px auto;
+  }
+
+  .inner {
+    max-width: 1280px;
+    width: 100%;
+    padding: 160px 24px;
+    margin: 0 auto;
+
+    @include media('<phone') {
+      padding: 128px 24px;
+    }
+  }
+  
+  .title {
+    font-size: $font-lg;
+    font-weight: 700;
+    overflow: hidden;
+  
+    span  {
+      transform: translateY((50%));
+      opacity: 0;
+      display: inline-block;
+      will-change: transform, opacity;
+    }
+  }
+
+  .body {
+    margin-top: 40px;
+    font-size: $font-sm;
+    line-height: 1.6;
+    
+    p:last-child {
+      margin-top: 16px;
+    }
+
+    div {
+      overflow: hidden;
+
+      span  {
+        transform: translateY((50%));
+        opacity: 0;
+        display: block;
+        will-change: transform, opacity;
+      }
+    }
+  }
+
+  .button {
+    margin-top: 48px;
+    overflow: hidden;
+    transform: translateY((20%));
+    opacity: 0;
+    display: inline-block;
+    will-change: transform, opacity;
+
+    a {
+      background-color: #15418c;
+      color: $c-white;
+      padding: 16px 48px;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 28px;
+      transition: .2s ease;
+
+      &:hover {
+        background-color: rgba($color: #15418c, $alpha: 0.8);
+        color: $c-gray-1;
+      }
+    }
+  }
+}

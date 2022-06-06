@@ -1,78 +1,69 @@
 @import '@/styles/utils/utils';
 
 .header {
-  max-width: 1200px;
-  width: 100%;
-  padding: 128px 24px 0;
-  margin: 0 auto;
+  padding: 192px 128px 256px;
 
-  &__title {
-    font-size: $font-xxl;
-    font-family: $font-meticula;
-
-    div {
-      overflow: hidden;
-      
-      span {
-        will-change: transform, opacity;
-        transform: translateY(50%);
-        opacity: 0;
-        display: inline-block;
-        line-height: 54px;
-        font-weight: bold;
-      }
-    }
+  @include media('<phone') {
+    padding: 96px 24px 128px;
   }
+}
 
-  &__subtitle {
-    font-size: $font-sm;
-    margin-top: 24px;
+.inner {
+  text-align: center;
+}
 
-    div {
-      overflow: hidden;
+.title {
+  font-size: 40px;
+  font-family: $font-meticula;
+  font-weight: bold;
 
-      span {
-        display: inline-block;
-        will-change: transform, opacity;
-        transform: translateY(50%);
-        opacity: 0;
-      }
+  div {
+    overflow: hidden;
+    
+    span {
+      will-change: transform, opacity;
+      transform: translateY(50%);
+      opacity: 0;
+      display: inline-block;
+      line-height: 40px;
+      font-weight: bold;
     }
   }
 
   @include media('<phone') {
-    padding-top: 64px;
+    font-size: $font-lg;
+  }
+}
 
-    &__title {
-      font-size: $font-lg;
-      
-      span {
-        line-height: 36px !important;
-      }
+.subtitle {
+  margin-top: 24px;
 
-      .disney {
-        font-size: $font-xl !important;
-      }
+  div {
+    overflow: hidden;
+
+    span {
+      display: inline-block;
+      will-change: transform, opacity;
+      transform: translateY(50%);
+      opacity: 0;
     }
+  }
 
-    &__subtitle {
-      font-size: $font-xs;
-    }
+  @include media('<phone') {
+    font-size: $font-xs;
+    margin-top: 16px;
   }
 }
 
 .video {
-  position: relative;
   width: 100%;
-  margin-top: 256px;
-  aspect-ratio: 2;
+  height: calc(100vh - 80px);
+  margin-bottom: 120px;
   overflow: hidden;
   opacity: 0;
 
   @include media('<phone') {
-    margin-top: 160px;
-    height: 480px;
-    aspect-ratio: none;
+    margin-bottom: 80px;
   }
 
   &__wrapper {
@@ -83,33 +74,5 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-}
-
-@keyframes rotation {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes scroll {
-  0% {
-    transform: scaleY(0%);
-    transform-origin: top;
-  }
-  49.9% {
-    transform: scaleY(100%);
-    transform-origin: top;
-  }
-  50% {
-    transform: scaleY(100%);
-    transform-origin: bottom;
-  }
-  100% {
-    transform: scaleY(0%);
-    transform-origin: bottom;
   }
 }

@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { useEffect } from 'react'
 import { splitLine } from '@/lib/utils/text'
 import gsap from 'gsap'
@@ -39,15 +38,6 @@ export default function About () {
       stagger: {
         amount: 0.1
       }
-    }, '<').to(`.${s.gallery__item}`, {
-      y: 0,
-      opacity: 1,
-      duration: 2,
-      ease: 'expo.out',
-      stagger: {
-        amount: .2
-      },
-      delay: .4
     }, '<')
   }, [])
 
@@ -56,7 +46,7 @@ export default function About () {
       <div className={s.header}>
         <div className={s.header__wrapper}>
           <small className={s.header__subtitle}>
-            <span>VISION</span>
+            <span>Vision</span>
           </small>
           <h1 className={s.header__title}>
             <span>いつでも、どこでも、ディズニーへ</span>
@@ -69,17 +59,6 @@ export default function About () {
               2016年8月に発足したこのプロジェクトは、有志の学生, 社会人によって非営利で運営されています。
             </p>
           </div>
-        </div>
-      </div>
-      <div className={s.gallery}>
-        <div className={s.gallery__item}>
-          <Image src='/img/gallery-0.webp' layout='fill' alt='gallery' />
-        </div>
-        <div className={s.gallery__item}>
-          <Image src='/img/gallery-1.webp' layout='fill' alt='gallery' />
-        </div>
-        <div className={s.gallery__item}>
-          <Image src='/img/gallery-2.webp' layout='fill' alt='gallery' />
         </div>
       </div>
     </section>

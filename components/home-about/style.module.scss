@@ -1,18 +1,22 @@
 @import '@/styles/utils/utils';
 
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   width: 100%;
-  padding: 0 24px;
-  margin: 240px auto 0;
+  padding: 120px 24px;
+  margin: 0 auto;
+
+  @include media('<phone') {
+    padding: 80px 24px;
+  }
 
   .header {
     &__subtitle {
-      font-size: $font-xs;
-      font-family: $font-meticula;
+      font-size: $font-lg;
+      font-family: $font-notera;
       font-weight: 700;
-      letter-spacing: 2px;
-      color: $c-gray-6;
+      letter-spacing: 1px;
+      color: $c-gray-5;
       overflow: hidden;
   
       span  {
@@ -24,10 +28,10 @@
     }
 
     &__title {
-      font-size: $font-lg;
+      font-size: $font-xl;
       font-family: $font-meticula;
       font-weight: 700;
-      margin-top: 8px;
+      margin-top: 16px;
       overflow: hidden;
   
       span  {
@@ -36,10 +40,14 @@
         display: inline-block;
         will-change: transform, opacity;
       }
+
+      @include media('<phone') {
+        margin-top: 8px;
+      }
     }
   
     &__body {
-      margin-top: 48px;
+      margin-top: 64px;
       font-size: $font-sm;
       line-height: 1.6;
       
@@ -57,87 +65,15 @@
           will-change: transform, opacity;
         }
       }
+
+      @include media('<phone') {
+        margin-top: 48px;
+      }
     }
 
     @include media('<phone') {
       &__title {
         font-size: $font-md;
-      }
-    }
-  }
-
-  .gallery {
-    margin-top: 80px;
-
-    &__item {
-      position: relative;
-      opacity: 0;
-      transform: translateY(16px);
-      height: 100%;
-      margin-top: 32px;
-
-      img {
-        object-fit: cover;
-      }
-
-      &:nth-child(1) {
-        margin-top: 0;
-        width: 200px;
-        height: 120px;
-
-        img {
-          border-radius: 8px;
-        }
-      }
-  
-      &:nth-child(2) {
-        width: 260px;
-        height: 180px;
-        margin-left: auto;
-        margin-right: -24px;
-  
-        img {
-          border-radius: 8px 0 0 8px;
-        }
-      }
-  
-      &:nth-child(3) {
-        width: 320px;
-        height: 160px;
-        margin-left: -24px;
-  
-        img {
-          border-radius: 0 8px 8px 0;
-        }
-      }
-    }
-
-    @include media('>phone') {
-      margin-top: 180px;
-
-      &__item {
-        margin-top: 80px;
-
-        img {
-          border-radius: 8px !important;
-        }
-
-        &:nth-child(1) {
-          width: 480px;
-          height: 240px;
-        }
-    
-        &:nth-child(2) {
-          width: 800px;
-          height: 400px;
-          margin-right: 0;
-        }
-  
-        &:nth-child(3) {
-          width: 720px;
-          height: 360px;
-          margin-left: 0;
-        }
       }
     }
   }
