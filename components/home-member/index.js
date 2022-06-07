@@ -9,7 +9,15 @@ gsap.registerPlugin(ScrollTrigger)
 import s from './style.module.scss'
 
 export default function Member () {
-  const [shuffledCasts, setShuffledCasts] = useState([])
+  const [sortedCasts, setSourtedCasts] = useState([])
+
+  function sortCasts (a, b) {
+    a = a.tag.toString().toLowerCase()
+    b = b.tag.toString().toLowerCase()
+    if (a < b) return -1
+    else if (a > b) return 1
+    return 0
+  }
 
   function shuffleCasts () {
     let _casts = casts
@@ -19,17 +27,17 @@ export default function Member () {
       _casts[i] = _casts[j]
       _casts[j] = temp
     }
-    const _shuffledCasts = [...shuffledCasts, ..._casts]
-    setShuffledCasts(_shuffledCasts)
+    return _casts
   }
 
   useEffect(() => {
-    shuffleCasts()
+    const _casts = casts.sort(sortCasts)
+    setSourtedCasts([...sortedCasts, ..._casts])
   }, [])
 
   useEffect(() => {
-    if (shuffledCasts.length === 0) return
-    
+    if (sortedCasts.length === 0) return
+
     gsap.timeline({
       scrollTrigger: {
         trigger: `.${s.members}`,
@@ -57,7 +65,7 @@ export default function Member () {
         amount: 0.4
       }
     }, '<')
-  }, [shuffledCasts])
+  }, [sortedCasts])
 
   return (
     <section className={s.container}>
@@ -72,7 +80,7 @@ export default function Member () {
         </div>
         <div className={s.content}>
           <div className={s.members}>
-            {shuffledCasts.map(cast => (
+            {sortedCasts.map(cast => (
               <div className={s.member} key={cast.id}>
                 <Image src={`/img/casts/${cast.id}.webp`} alt={cast.name} className={s.member__avatar} width={96} height={96} placeholder='/img/noimage.png' />
                 <h1 className={s.member__name}>{cast.name}</h1>
