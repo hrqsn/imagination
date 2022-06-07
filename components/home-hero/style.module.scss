@@ -6,6 +6,10 @@
   padding: 192px 24px 256px;
   margin: 0 auto;
 
+  @include media('<tablet') {
+    padding: 128px 48px 160px;
+  }
+  
   @include media('<phone') {
     padding: 96px 24px 128px;
   }

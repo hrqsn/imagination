@@ -15,6 +15,10 @@
     align-items: center;
     justify-content: space-between;
 
+    @include media('<tablet') {
+      padding: 128px 48px 256px;
+    }
+    
     @include media('<phone') {
       flex-direction: column;
       flex-flow: column-reverse;

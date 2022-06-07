@@ -78,7 +78,7 @@ export default function About () {
           <img src='/img/gallery-1.webp' alt='gallery' />
         </div>
         <div className={s.item}>
-          <img src='/img/gallery-3.webp' alt='gallery' />
+          <img src='/img/gallery-2.webp' alt='gallery' />
         </div>
       </div>
     </section>
