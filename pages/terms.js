@@ -45,40 +45,42 @@ export default function Terms () {
           <h4>8. 団体について</h4>
           <p>Imagination Serverは非営利目的で“テーマパークファンの活動”として結集した、「Minecraft (Bedrock Edition）」を拠点とする非法人団体です。従って、プログラム及びサービスに関わる責任を一切負いません。</p>
           <h4>9. 権利関係について</h4>
-          <h5>(1) サービスの提供について</h5>
-          <p>Imagination Serverの「Minecraft (Bedrock Edition）」におけるサービスの提供は、日本国著作権法第38条1「営利を目的としない上演等」に基づき、営利を目的とせず、「Minecraft (Bedrock Edition）」という場所において上演しているものとします。</p>
-          <h5>(2) システムについて</h5>
-          <p>Imagination Serverのサービスシステムの権利は「Minecraft (Bedrock Edition）」の開発元である、Mojang Studiosの利用規約に基づいており、Imagination Serverの所有するものではありません。</p>
-          <h5>(3) スキンについて</h5>
-          <p>サービスの利用者の既存のキャラクターと明らかにわかるスキンの利用を、Mojang Studiosの利用規約に基づき、Imagination Serverは一切認めません。</p>
-          <h5>(4) テクスチャパックについて</h5>
-          <p>「Minecraft（Bedrock Edition）」の既存テクスチャ及びキャラクターがデザインされたテクスチャを除き、著作権はImagination Serverが所有します。キャラクターがデザインされたテクスチャは&lt;本項(1)&gt;に基づき提供しており、以下の企業より要請が行われた場合、それに従い対処します。</p>
-          <ul>
-            <li>The Walt Disney Company</li>
-          </ul>
-          <h5>(5) キャラクター及び商標について</h5>
-          <p>Imagination Serverが提供する物のなかで、オリジナルのキャラクターや商標(Imagination Server等の名前、ロゴなど)はImagination Serverが所有しますが、オリジナルではないキャラクター及び商標を使用している場合もあり、その場合は&lt;本項(1)&gt;に基づき提供しており、以下の団体及び企業より要請が行われた場合、それに従い対処します。</p>
-          <ul>
-            <li>The Walt Disney Company</li>
-            <li>株式会社オリエンタルランド</li>
-          </ul>
-          <h5>(6) 音楽について</h5>
-          <p>Imagination Serverで利用する音楽パックの音楽については、&lt;本項(1)&gt;に基づき提供しており、音楽に関してImagination Serverによる依頼で製作されたものも含め、全ての権利は所有せず、著作者の要請があった場合、それに従い対処します。</p>
-          <h5>(7) コマンドについて</h5>
-          <p>Mojang Studiosの利用規約に基づき、権利は一切所有しません。また、Imagination Serverが認めたもの以外コマンドの領布は行いません。</p>
-          <h5>(8) 建築物について</h5>
-          <p>日本国著作権法第46条「公開の美術の著作物等の利用」に基づき、「Minecraft (Bedrock Edition）」で「東京ディズニーリゾート」の全ての建築物を“屋外に恒常的に設置された美術”として再現（複製行為）を行ったものです。そのため、同様の解釈によるMinecraft上での再現に対しては権利を所有しませんが、“Imagination Serverの再現”と公言しているもの及び明らかな“Imagination Serverの模倣行為”と考えられるものに対しては権利を所有します。また、以下の企業より要請が行われた場合、それに従い対処します。</p>
-          <ul>
-            <li>The Walt Disney Company</li>
-            <li>The Walt Disney Imagineering</li>
-            <li>Walt Disney Creative Entertainment</li>
-            <li>Walt Disney Attractions</li>
-            <li>株式会社オリエンタルランド</li>
-          </ul>
-          <h5>(9) ワールドデータについて</h5>
-          <p>Imagination Serverのワールドデータは外部への頒布を一切行う予定はありません。そのため、ワールドデータを取り、外部に頒布するなどの行為は一切認めません。これは、&lt;本項(1)及び(8)&gt;において主張できる正当な権利範囲です。</p>
-          <h5>(10) 運営形態について</h5>
-          <p>Imagination Serverの運営形態を模倣する行為については、&lt;本項(1)&gt;において主張できる正当な範囲で権利を有します。そのため、明らかにImagination Serverの模倣と考えられる行為は一切認めません。</p>
+          <div>
+            <h5>(1) サービスの提供について</h5>
+            <p>Imagination Serverの「Minecraft (Bedrock Edition）」におけるサービスの提供は、日本国著作権法第38条1「営利を目的としない上演等」に基づき、営利を目的とせず、「Minecraft (Bedrock Edition）」という場所において上演しているものとします。</p>
+            <h5>(2) システムについて</h5>
+            <p>Imagination Serverのサービスシステムの権利は「Minecraft (Bedrock Edition）」の開発元である、Mojang Studiosの利用規約に基づいており、Imagination Serverの所有するものではありません。</p>
+            <h5>(3) スキンについて</h5>
+            <p>サービスの利用者の既存のキャラクターと明らかにわかるスキンの利用を、Mojang Studiosの利用規約に基づき、Imagination Serverは一切認めません。</p>
+            <h5>(4) テクスチャパックについて</h5>
+            <p>「Minecraft（Bedrock Edition）」の既存テクスチャ及びキャラクターがデザインされたテクスチャを除き、著作権はImagination Serverが所有します。キャラクターがデザインされたテクスチャは&lt;本項(1)&gt;に基づき提供しており、以下の企業より要請が行われた場合、それに従い対処します。</p>
+            <ul>
+              <li>The Walt Disney Company</li>
+            </ul>
+            <h5>(5) キャラクター及び商標について</h5>
+            <p>Imagination Serverが提供する物のなかで、オリジナルのキャラクターや商標(Imagination Server等の名前、ロゴなど)はImagination Serverが所有しますが、オリジナルではないキャラクター及び商標を使用している場合もあり、その場合は&lt;本項(1)&gt;に基づき提供しており、以下の団体及び企業より要請が行われた場合、それに従い対処します。</p>
+            <ul>
+              <li>The Walt Disney Company</li>
+              <li>株式会社オリエンタルランド</li>
+            </ul>
+            <h5>(6) 音楽について</h5>
+            <p>Imagination Serverで利用する音楽パックの音楽については、&lt;本項(1)&gt;に基づき提供しており、音楽に関してImagination Serverによる依頼で製作されたものも含め、全ての権利は所有せず、著作者の要請があった場合、それに従い対処します。</p>
+            <h5>(7) コマンドについて</h5>
+            <p>Mojang Studiosの利用規約に基づき、権利は一切所有しません。また、Imagination Serverが認めたもの以外コマンドの領布は行いません。</p>
+            <h5>(8) 建築物について</h5>
+            <p>日本国著作権法第46条「公開の美術の著作物等の利用」に基づき、「Minecraft (Bedrock Edition）」で「東京ディズニーリゾート」の全ての建築物を“屋外に恒常的に設置された美術”として再現（複製行為）を行ったものです。そのため、同様の解釈によるMinecraft上での再現に対しては権利を所有しませんが、“Imagination Serverの再現”と公言しているもの及び明らかな“Imagination Serverの模倣行為”と考えられるものに対しては権利を所有します。また、以下の企業より要請が行われた場合、それに従い対処します。</p>
+            <ul>
+              <li>The Walt Disney Company</li>
+              <li>The Walt Disney Imagineering</li>
+              <li>Walt Disney Creative Entertainment</li>
+              <li>Walt Disney Attractions</li>
+              <li>株式会社オリエンタルランド</li>
+            </ul>
+            <h5>(9) ワールドデータについて</h5>
+            <p>Imagination Serverのワールドデータは外部への頒布を一切行う予定はありません。そのため、ワールドデータを取り、外部に頒布するなどの行為は一切認めません。これは、&lt;本項(1)及び(8)&gt;において主張できる正当な権利範囲です。</p>
+            <h5>(10) 運営形態について</h5>
+            <p>Imagination Serverの運営形態を模倣する行為については、&lt;本項(1)&gt;において主張できる正当な範囲で権利を有します。そのため、明らかにImagination Serverの模倣と考えられる行為は一切認めません。</p>
+          </div>
           <h4>10. プログラム及びサービスの停止、終了について</h4>
           <p>Imagination Serverが展開するプログラム及びサービスは事前の予告なく、Imagination Serverの判断で停止、終了することができます。また、停止、終了に関して、Imagination Serverは告知、表記、周知する義務は負いません。</p>
           <h4>11. プログラム及びサービスによって生じた事項の解決方法について</h4>

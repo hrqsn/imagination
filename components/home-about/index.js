@@ -38,6 +38,15 @@ export default function About () {
       stagger: {
         amount: 0.1
       }
+    }, '<').to(`.${s.item}`, {
+      y: 0,
+      opacity: 1,
+      ease: 'expo.out',
+      duration: 4,
+      delay: 0.2,
+      stagger: {
+        amount: 0.1
+      }
     }, '<')
   }, [])
 
@@ -59,6 +68,20 @@ export default function About () {
               2016年8月に発足したこのプロジェクトは、有志の学生, 社会人によって非営利で運営されています。
             </p>
           </div>
+        </div>
+      </div>
+      <div className={s.gallery}>
+        <div className={s.item}>
+          <img src='/img/gallery-0.webp' alt='gallery' />
+        </div>
+        <div className={s.item}>
+          <img src='/img/gallery-1.webp' alt='gallery' />
+        </div>
+        <div className={s.item}>
+          <img src='/img/gallery-2.webp' alt='gallery' />
+        </div>
+        <div className={s.item}>
+          <img src='/img/gallery-3.webp' alt='gallery' />
         </div>
       </div>
     </section>

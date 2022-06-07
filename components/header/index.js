@@ -106,6 +106,9 @@ export default function Header () {
                 <Link href='/news'>
                   <a className={cn(s.nav__link, active('/news') && s.active)}>ニュース</a>
                 </Link>
+                <Link href='/terms'>
+                  <a className={cn(s.nav__link, active('/terms') && s.active)}>利用規約</a>
+                </Link>
                 <a className={cn(s.nav__link, s.nav__button)} href='https://twitter.com/imasaba_support/' target='_blank' rel='noopener noreferrer'>お問い合わせ</a>
               </nav>
               <span className={s.nav__bar} />
