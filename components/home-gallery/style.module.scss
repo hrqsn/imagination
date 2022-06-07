@@ -1,0 +1,31 @@
+@import '@/styles/utils/utils';
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+
+  @include media('<phone') {
+    gap: 16px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  .item {
+    transform: translateY(16px);
+    opacity: 0;
+    will-change: transform, opacity;
+  }
+}

@@ -44,7 +44,7 @@ export default function Member () {
       <div className={s.wrapper}>
         <div className={s.header}>
           <small className={s.header__subtitle}>
-            <span>MEMBERS</span>
+            <span>Members</span>
           </small>
           <h1 className={s.header__title}>
             <span>メンバー</span>

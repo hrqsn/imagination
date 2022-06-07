@@ -51,7 +51,7 @@ export default function News ({ posts }) {
       <div className={s.wrapper}>
         <div className={s.header}>
           <small className={s.header__subtitle}>
-            <span>NEWS</span>
+            <span>News</span>
           </small>
           <h1 className={s.header__title}>
             <span>ニュース</span>

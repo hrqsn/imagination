@@ -2,6 +2,7 @@
 
 html {
   box-sizing: border-box;
+  height: -webkit-fill-available;
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -14,10 +15,6 @@ html {
   overflow-y: scroll;
 }
 
-[data-scroll] {
-  height: 100vh;
-}
-
 *,
 *:before,
 *:after {
@@ -27,7 +24,7 @@ html {
 body {
   margin: 0;
   color: $c-text;
-  background: $c-white;
+  background: $c-bg;
   word-break: break-word;
   word-wrap: break-word;
   font-family: $font-sans;
@@ -118,10 +115,6 @@ main {
   -webkit-transition: opacity 1s $ease-in-out 1.2s;
 }
 
-.loader {
-  will-change: transform;
-}
-
 .link-hover {
   position: relative;
   text-decoration: none;
@@ -145,24 +138,12 @@ main {
   }
 }
 
-.pace-done {
-  .lazyload::before {
-    opacity: 0;
-  }
-}
-
 .split-lines-outer {
   overflow-y: hidden;
 }
 
 .split-lines-inner {
   display: inline-block;
-}
-
-.parallax {
-  position: relative;
-  overflow: hidden;
-  height: 100%;
 }
 
 .underline {

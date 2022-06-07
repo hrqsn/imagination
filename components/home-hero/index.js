@@ -10,7 +10,7 @@ import s from './style.module.scss'
 export default function Hero () {
   useEffect(() => {
     gsap.timeline()
-    .to(`.${s.header__title}>div>span`, {
+    .to(`.${s.title}>div>span`, {
       y: 0,
       opacity: 1,
       ease: 'expo.out',
@@ -18,7 +18,7 @@ export default function Hero () {
       stagger: {
         amount: 0.2
       }
-    }).to(`.${s.header__subtitle}>div>span`, {
+    }).to(`.${s.subtitle}>div>span`, {
       y: 0,
       opacity: 1,
       ease: 'expo.out',
@@ -34,25 +34,25 @@ export default function Hero () {
   return (
     <div>
       <div className={s.header}>
-        <div className={s.header__content}>
-          <div className={s.header__title}>
-            <div>
-              <span>We</span>&nbsp;
-              <span>are</span>&nbsp;
-              <span>recreating</span>
-            </div>
-            <div>
-              <span>Tokyo</span>&nbsp;
-              <span>Disney</span>&nbsp;
-              <span>Resort</span>&nbsp;
-              <span>in</span>&nbsp;
-              <span>Minecraft ✨</span>
-            </div>
+        <h1 className={s.title}>
+          <div>
+            <span>We</span>&nbsp;
+            <span>are</span>&nbsp;
+            <span>recreating</span>
           </div>
-          <div className={s.header__subtitle}>
-            <div>
-              <span>Minecraftで東京ディズニーリゾートを再現プロジェクト</span>
-            </div>
+          <div>
+            <span>Tokyo</span>&nbsp;
+            <span>Disney</span>&nbsp;
+            <span>Resort</span>&nbsp;
+            <span>in</span>&nbsp;
+            <span>Minecraft:</span>&nbsp;
+            <span>Bedrock</span>&nbsp;
+            <span>Edition</span>
+          </div>
+        </h1>
+        <div className={s.subtitle}>
+          <div>
+            <span>Minecraftで東京ディズニーリゾートを再現プロジェクト</span>
           </div>
         </div>
       </div>

@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { useEffect } from 'react'
 import { splitLine } from '@/lib/utils/text'
 import gsap from 'gsap'
@@ -39,15 +38,15 @@ export default function About () {
       stagger: {
         amount: 0.1
       }
-    }, '<').to(`.${s.gallery__item}`, {
+    }, '<').to(`.${s.item}`, {
       y: 0,
       opacity: 1,
-      duration: 2,
+      duration: 4,
       ease: 'expo.out',
       stagger: {
         amount: .2
       },
-      delay: .4
+      delay: .2
     }, '<')
   }, [])
 
@@ -56,7 +55,7 @@ export default function About () {
       <div className={s.header}>
         <div className={s.header__wrapper}>
           <small className={s.header__subtitle}>
-            <span>VISION</span>
+            <span>Vision</span>
           </small>
           <h1 className={s.header__title}>
             <span>いつでも、どこでも、ディズニーへ</span>
@@ -72,14 +71,14 @@ export default function About () {
         </div>
       </div>
       <div className={s.gallery}>
-        <div className={s.gallery__item}>
-          <Image src='/img/gallery-0.webp' layout='fill' alt='gallery' />
+        <div className={s.item}>
+          <img src='/img/gallery-0.webp' alt='gallery' />
         </div>
-        <div className={s.gallery__item}>
-          <Image src='/img/gallery-1.webp' layout='fill' alt='gallery' />
+        <div className={s.item}>
+          <img src='/img/gallery-1.webp' alt='gallery' />
         </div>
-        <div className={s.gallery__item}>
-          <Image src='/img/gallery-2.webp' layout='fill' alt='gallery' />
+        <div className={s.item}>
+          <img src='/img/gallery-3.webp' alt='gallery' />
         </div>
       </div>
     </section>

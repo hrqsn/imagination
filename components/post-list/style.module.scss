@@ -21,24 +21,31 @@
 
   &__image {
     width: 100%;
-    height: 180px;
+    aspect-ratio: 2;
     object-fit: cover;
     border-radius: 8px;
+    transition: transform .4s ease;
   }
 
   &__title {
     font-size: $font-sm;
     font-weight: 600;
     margin-top: 12px;
+    padding: 0 8px;
   }
 
   &__date {
     font-size: $font-xs;
     color: $c-gray-6;
     margin-top: 6px;
+    padding: 0 8px;
   }
 
   &:hover {
     color: $c-gray-5;
+
+    .post__image {
+      transform: scale(0.98);
+    }
   }
 }

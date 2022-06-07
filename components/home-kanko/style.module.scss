@@ -1,0 +1,104 @@
+@import '@/styles/utils/utils';
+
+.container {
+  position: relative;
+  width: 100%;
+  margin: 240px auto 120px;
+  color: $c-white;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url('/img/visit.webp');
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, #1a51af 0%, rgba($color: #1a51af, $alpha: 0.94) 100%);
+  }
+
+  @include media('<phone') {
+    margin: 160px auto 80px;
+  }
+
+  .inner {
+    position: relative;
+    max-width: 1280px;
+    width: 100%;
+    padding: 160px 24px;
+    margin: 0 auto;
+    z-index: 1;
+
+    @include media('<phone') {
+      padding: 128px 24px;
+    }
+  }
+  
+  .title {
+    font-size: $font-lg;
+    font-weight: 700;
+    overflow: hidden;
+  
+    span  {
+      transform: translateY((50%));
+      opacity: 0;
+      display: inline-block;
+      will-change: transform, opacity;
+    }
+  }
+
+  .body {
+    margin-top: 40px;
+    font-size: $font-sm;
+    line-height: 1.6;
+    
+    p:last-child {
+      margin-top: 16px;
+    }
+
+    div {
+      overflow: hidden;
+
+      span  {
+        transform: translateY((50%));
+        opacity: 0;
+        display: block;
+        will-change: transform, opacity;
+      }
+    }
+  }
+
+  .button {
+    margin-top: 48px;
+    overflow: hidden;
+    transform: translateY((20%));
+    opacity: 0;
+    display: inline-block;
+    will-change: transform, opacity;
+
+    a {
+      background-color: #15418c;
+      color: $c-white;
+      padding: 16px 48px;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 28px;
+      transition: .2s ease;
+
+      &:hover {
+        background-color: rgba($color: #15418c, $alpha: 0.8);
+        color: $c-gray-1;
+        transform: scale(0.98);
+      }
+    }
+  }
+}
