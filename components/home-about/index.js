@@ -41,12 +41,12 @@ export default function About () {
     }, '<').to(`.${s.item}`, {
       y: 0,
       opacity: 1,
-      ease: 'expo.out',
       duration: 4,
-      delay: 0.2,
+      ease: 'expo.out',
       stagger: {
-        amount: 0.1
-      }
+        amount: .2
+      },
+      delay: .2
     }, '<')
   }, [])
 
@@ -76,9 +76,6 @@ export default function About () {
         </div>
         <div className={s.item}>
           <img src='/img/gallery-1.webp' alt='gallery' />
-        </div>
-        <div className={s.item}>
-          <img src='/img/gallery-2.webp' alt='gallery' />
         </div>
         <div className={s.item}>
           <img src='/img/gallery-3.webp' alt='gallery' />

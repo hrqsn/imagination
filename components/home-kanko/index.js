@@ -35,9 +35,9 @@ export default function HomeKanko () {
     }, '<').to(`.${s.button}`, {
       y: 0,
       opacity: 1,
-      duration: 2,
+      duration: 4,
       ease: 'expo.out',
-      delay: .4
+      delay: .2
     }, '<')
   }, [])
 
