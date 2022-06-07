@@ -19,6 +19,10 @@
   padding: 0 24px;
   margin: 0 auto;
 
+  @include media('<tablet') {
+    padding: 0 48px;
+  }
+  
   @include media('<phone') {
     padding: 0 24px;
   }
