@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import casts from '@/casts'
@@ -9,7 +9,27 @@ gsap.registerPlugin(ScrollTrigger)
 import s from './style.module.scss'
 
 export default function Member () {
+  const [shuffledCasts, setShuffledCasts] = useState([])
+
+  function shuffleCasts () {
+    let _casts = casts
+    for (let i = _casts.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1))
+      const temp = _casts[i]
+      _casts[i] = _casts[j]
+      _casts[j] = temp
+    }
+    const _shuffledCasts = [...shuffledCasts, ..._casts]
+    setShuffledCasts(_shuffledCasts)
+  }
+
   useEffect(() => {
+    shuffleCasts()
+  }, [])
+
+  useEffect(() => {
+    if (shuffledCasts.length === 0) return
+    
     gsap.timeline({
       scrollTrigger: {
         trigger: `.${s.members}`,
@@ -37,7 +57,7 @@ export default function Member () {
         amount: 0.4
       }
     }, '<')
-  }, [])
+  }, [shuffledCasts])
 
   return (
     <section className={s.container}>
@@ -52,7 +72,7 @@ export default function Member () {
         </div>
         <div className={s.content}>
           <div className={s.members}>
-            {casts.map(cast => (
+            {shuffledCasts.map(cast => (
               <div className={s.member} key={cast.id}>
                 <Image src={`/img/casts/${cast.id}.webp`} alt={cast.name} className={s.member__avatar} width={96} height={96} placeholder='/img/noimage.png' />
                 <h1 className={s.member__name}>{cast.name}</h1>
