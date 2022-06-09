@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import Image from 'next/image'
 import { splitLine } from '@/lib/utils/text'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
@@ -72,13 +73,13 @@ export default function About () {
       </div>
       <div className={s.gallery}>
         <div className={s.item}>
-          <img src='/img/gallery-0.webp' alt='gallery' />
+          <Image src='/img/gallery-0.webp' alt='gallery' layout='fill' sizes='40vw' />
         </div>
         <div className={s.item}>
-          <img src='/img/gallery-1.webp' alt='gallery' />
+          <Image src='/img/gallery-1.webp' alt='gallery' layout='fill' sizes='40vw' />
         </div>
         <div className={s.item}>
-          <img src='/img/gallery-2.webp' alt='gallery' />
+          <Image src='/img/gallery-2.webp' alt='gallery' layout='fill' sizes='40vw' />
         </div>
       </div>
     </section>

@@ -49,8 +49,8 @@ export default function Header () {
     } else {
       gsap.timeline({
         onComplete: () => {
-          document.documentElement.style.overflow = null
-          document.body.style.overflow = null
+          // document.documentElement.style.overflow = null
+          // document.body.style.overflow = null
         }
       })
       .to(`.${s.menu__btn}>span:nth-child(1)`, {
