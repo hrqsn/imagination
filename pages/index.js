@@ -11,7 +11,7 @@ import { getAllPosts } from '@/lib/api'
 export default function Home ({ posts }) {
   useEffect(() => {
     const lazyAssets = [].slice.call(document.querySelectorAll('.lazyload'))
-
+    
     if ('IntersectionObserver' in window) {
       const lazyAssetsObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach((asset) => {
