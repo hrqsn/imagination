@@ -14,7 +14,7 @@ export default class MyDocument extends Document {
           <link rel='icon' type='image/png' href='/favicons/android-chrome-256x256.png' sizes='256x256' />
           <link rel='manifest' href='/favicons/site.webmanifest' />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='true' />
           <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet"></link>
           <script
             async
