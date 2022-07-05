@@ -10,9 +10,19 @@
     font-weight: 600;
   }
 
+  &__divider {
+    border: 1px solid $c-border !important;
+  }
+
   &__header {
-    font-size: $font-base;
+    padding-top: 24px;
+    padding-bottom: 40px;
+  }
+
+  &__title {
+    font-size: $font-lg;
     font-weight: 600;
+    padding-bottom: 16px;
   }
 
   .section__body {

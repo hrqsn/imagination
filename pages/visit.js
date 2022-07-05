@@ -25,10 +25,11 @@ export default function Visit () {
           <h4>運営情報</h4>
           <p className='section__body'>[{dayjs().format('MM/DD')}] 次回の開園に向けて準備を進めています。</p>
         </section> */}
-        <section className='section'>
-          <h2 className='section__header'>観光企画「Imagination Explosion​​​​​​​」を開催決定！</h2>
-          <p className='section__body'>この度、Imagination Server 5周年フィナーレを飾る観光企画「Imagination Explosion ~Imagination Server 5th Anniversary Grand Finale~」を開催いたします！</p>
+        <section className='section section__header'>
+          <h2 className='section__title'>観光企画「Imagination Explosion​​​​​​​」開催決定！</h2>
+          <p className='section__body'>この度、Imagination Server 5周年フィナーレを飾る観光企画「Imagination Explosion ~Imagination Server 5th Anniversary Grand Finale~」を開催いたします。</p>
         </section>
+        <hr className='section__divider' />
         <section className='section'>
           <h4>観光企画とは</h4>
           <p className='section__body'>観光企画は、忠実に再現されたバーチャルパークを体験いただけるイベントです。徒歩による観光のほか、アトラクションやショーなどを全世界から集まるゲストの皆様と一緒にお楽しみいただけます。</p>
