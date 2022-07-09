@@ -27,7 +27,7 @@ export default function Visit () {
         </section> */}
         <section className='section section__header'>
           <h2 className='section__title'>観光企画「Imagination Explosion​​​​​​​」開催決定！</h2>
-          <p className='section__body'>この度、Imagination Server 5周年フィナーレを飾る観光企画「Imagination Explosion ~Imagination Server 5th Anniversary Grand Finale~」を開催いたします。</p>
+          <p className='section__body'>この度、Imagination Server 5周年フィナーレを飾る観光企画「Imagination Server 5th Anniversary Grand Finale ~Imagination Explosion~」を開催いたします。</p>
         </section>
         <hr className='section__divider' />
         <section className='section'>
@@ -63,12 +63,12 @@ export default function Visit () {
             <li>2. <span>インターネット環境</span></li>
             <li>3. <span>Discordアプリ (<a className='underline' href='https://discord.com/' target='_blank' rel='noopener'>ダウンロードリンク</a>)</span></li>
           </ul>
-          <p className='section__description'>Minecraft Java, PS4版はサーバーへの接続ができません。Switch版につきましては本体の設定を行うことで参加できる場合があります。予めご了承下さい。</p>
+          <p className='section__description'>Minecraft Java, PS4, Switch版はサーバーへの接続ができません。予めご了承下さい。</p>
         </section>
         <section className='section'>
           <h4>参加方法</h4>
           <ul className='section__body'>
-            <li>1. <a className='underline' href='https://forms.gle/yYovXtGfHDrxtk57A' target='_blank' rel='noopener'>参加申請フォーム</a> から必要事項をご記入の上、回答を送信してください。送信後、Discordサーバーへの参加方法が表示されますので、案内に沿って必ずご参加ください。</li>
+            <li>1. <a className='underline' href='https://imasaba.com/2022summer' target='_blank' rel='noopener'>参加申請フォーム</a> から必要事項をご記入の上、回答を送信してください。送信後、Discordサーバーへの参加方法が表示されますので、案内に沿って必ずご参加ください。</li>
             <li>2. Discordサーバーに参加すると、詳細な参加方法や注意事項をご確認いただけます。ゲストの皆様やキャストとの交流を楽しみながら、開園をお待ちください！</li>
           </ul>
         </section>
