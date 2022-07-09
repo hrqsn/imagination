@@ -10,9 +10,19 @@
     font-weight: 600;
   }
 
+  &__divider {
+    border: 1px solid $c-border !important;
+  }
+
   &__header {
-    font-size: $font-base;
+    padding-top: 24px;
+    padding-bottom: 40px;
+  }
+
+  &__title {
+    font-size: $font-lg;
     font-weight: 600;
+    padding-bottom: 16px;
   }
 
   .section__body {
@@ -38,10 +48,29 @@
     }
   }
 
+  .section__gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+
+    @include media('<phone') {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .section__gallery--item {
+    display: flex;
+    border-radius: 8px;
+
+    img {
+      border-radius: 8px;
+    }
+  }
+
   .section__description {
     font-size: $font-sm;
     margin-top: 24px;
-    color: $c-gray-4;
+    color: $c-gray-5;
   }
 
   .section__center {
